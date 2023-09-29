@@ -4,14 +4,16 @@
 
 :root {
   --first-color: #ebaa10;
-  --second-color: #fa2648;
+  --second-color: #b78b22;
   --third-color: #91c73b;
   --fourth-color: #5a7a11;
+  --fifth-color: #fa2648;
   --white-color: #fff;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+/************************************** FOOTER **************************************/
 .footerButton {
   width: 300px;
   height: 40px;
@@ -22,4 +24,7 @@
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+.bottom-color-footer {
+  background-color: var(--second-color);
 }
