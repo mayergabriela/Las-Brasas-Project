@@ -3,7 +3,35 @@
 @tailwind utilities;
 
 :root {
+  --first-color: #ebaa10;
+  --second-color: #b78b22;
+  --third-color: #91c73b;
+  --fourth-color: #5a7a11;
+  --fifth-color: #fa2648;
+  --white-color: #fff;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+/************************************** CARDS **************************************/
+@layer components {
+  .card {
+    @apply shadow-lg rounded-xl;
+  }
+}
+/************************************** FOOTER **************************************/
+.footerButton {
+  width: 300px;
+  height: 40px;
+  color: var(--white-color);
+  background: var(--first-color);
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.bottom-color-footer {
+  background-color: var(--second-color);
 }
