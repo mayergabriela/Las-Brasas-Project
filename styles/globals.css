@@ -13,6 +13,13 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+/************************************** CARDS **************************************/
+@layer components {
+  .card {
+    @apply shadow-lg rounded-xl;
+  }
+}
 /************************************** FOOTER **************************************/
 .footerButton {
   width: 300px;
