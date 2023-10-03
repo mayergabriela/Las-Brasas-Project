@@ -3,7 +3,7 @@ import Image from "next/image";
 import imageAbout2 from "@/public/images/aboutImage/img 2.png";
 import imageAbout1 from "@/public/images/aboutImage/img 1.png";
 import imageAbout3 from "@/public/images/aboutImage/img 3.png";
-// componentes
+// subcomponentes
 import AboutDueño from "./aboutDueño";
 import Reserva from "./reserva";
 
