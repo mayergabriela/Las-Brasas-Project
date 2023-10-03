@@ -5,7 +5,7 @@ import imageDueño1 from "public/images/aboutImage/Chris_P_img.png";
 export default function AboutDueño() {
   return (
     <>
-      <section className="flex">
+      <section className="md:grid md:grid-cols-2 grid-rows-1 gap-4">
         <article>
           <div className="sm:w-[635px] sm:h-[159px]">
             <h2 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">
@@ -16,7 +16,7 @@ export default function AboutDueño() {
               IAN PETERSON
             </h2>
           </div>
-          <div className="w-[500px]">
+          <div className="sm:w-[500px]">
             <p className=" text-center font-nunito text-base font-normal">
               Nació en 1969 en San Isidro, Buenos Aires. Su abuela Susana y su
               mamá Tatana le inculcaron el amor por la cocina.  Estudió con
@@ -35,8 +35,7 @@ export default function AboutDueño() {
             </p>
           </div>
         </article>
-      </section>
-        <article className="sm:flex sm:justify-end sm:flex-col-1 ">
+        <article className=" grid place-content-center sm:flex sm:justify-end sm:flex-col">
           <div className="">
             <Image
               src={imageDueño2}
@@ -56,6 +55,7 @@ export default function AboutDueño() {
             />
           </div>
         </article>
+      </section>
     </>
   );
 }
