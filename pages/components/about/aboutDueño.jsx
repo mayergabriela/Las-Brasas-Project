@@ -45,7 +45,7 @@ export default function AboutDueño() {
               layout="fixed"
             />
           </div>
-          <div className="">
+          <div className="p-1">
             <Image
               src={imageDueño1}
               alt="perfil"
