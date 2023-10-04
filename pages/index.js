@@ -1,7 +1,6 @@
-
-import { Inter } from "next/font/google";
 import About from "./components/about/about";
 
+import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 
