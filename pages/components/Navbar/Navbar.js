@@ -2,48 +2,116 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import {AiOutlineMenu} from 'react-icons/ai'
-import {AiOutlineClose} from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch } from 'react-icons/ai'
+import { BiSolidUser } from 'react-icons/bi'
+import { FaShoppingCart } from 'react-icons/fa'
 import { useState } from 'react'
 
 
 function Navbar() {
-    const [toggle, setToggle] = useState(false)
+    const [nav, setNav] = useState(false)
+
+    const handleNav = () => {
+        setNav(!nav);
+    }
 
     return (
-        <div className='fixed bg-transparent top-0 w-[100%] z-20'>
-            <div className='container mx-auto flex justify-between items-center px-4 py-4'>
-                <div className='flex items-center'>
-                    <Link href={"/"} className='opacity-90 hover:opacity-50'>
-                        <Image src='/images/las_brazas_cook(light).png' width={70} height={70} alt='Logo Las Brasas Cook' />
-                    </Link>
+        <div className='fixed bg-black/75 top-0 w-full h-20 z-[100]'>
+            <div className='container mx-auto w-full h-full flex justify-between items-center px-2 2xl:px-16 py-4'> 
+                <Link href={"/"} className='opacity-90 hover:opacity-50'>
+                    <Image 
+                        src='/images/las_brazas_cook(light).png' 
+                        width={60} 
+                        height={60} 
+                        alt='Logo Las Brasas Cook' 
+                    />
+                </Link> 
+                <div>
+                    <ul className='hidden md:flex gap-10 tracking-wider text-white opacity'>
+                        <Link href={"/acercaDe"}>
+                            <li className='opacity-90 hover:opacity-50'>ACERCA DE</li>
+                        </Link>
+                        <Link href={"/reservas"}>
+                            <li className='opacity-90 hover:opacity-50'>RESERVAS</li>
+                        </Link>
+                        <Link href={"/cartaOnline"}>
+                            <li className='opacity-90 hover:opacity-50'>CARTA ONLINE</li>
+                        </Link>
+                        <Link href={"/cartaTakeAway"}>
+                            <li className='opacity-90 hover:opacity-50'>CARTA TAKE AWAY</li>
+                        </Link>
+                        <Link href={"/contacto"}>
+                            <li className='opacity-90 hover:opacity-50'>CONTACTO</li>
+                        </Link>
+                    </ul>
                 </div>
-                <div className='hidden md:flex gap-10 tracking-wider text-white opacity'>
-                    <Link href={"/acercaDe"} className='opacity-90 hover:opacity-50'>ACERCA DE</Link>
-                    <Link href={"/reservas"} className='opacity-90 hover:opacity-50'>RESERVAS</Link>
-                    <Link href={"/cartaOnline"} className='opacity-90 hover:opacity-50'>CARTA ONLINE</Link>
-                    <Link href={"/cartaTakeAway"} className='opacity-90 hover:opacity-50'>CARTA TAKE AWAY</Link>
-                    <Link href={"/contacto"} className='opacity-90 hover:opacity-50'>CONTACTO</Link>
+                <div className='hidden md:flex justify-between items-center gap-3 px-4 py-1 opacity-90 hover:opacity-50'>
+                    <div className='flex items-center justify-between px-6 my-4 w-full gap-6'>
+                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <AiOutlineSearch fill='white'/> 
+                        </div>
+                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <BiSolidUser fill='white'/> 
+                        </div>
+                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <FaShoppingCart fill='white'/> 
+                        </div>   
+                    </div>
                 </div>
-                <div className='hidden md:flex justify-between items-center gap-3 px-4 py-1 opacity-90 hover:opacity-50 text-white'>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                <div onClick={handleNav} className='md:hidden'>
+                    <AiOutlineMenu fill='white' size={25} />
                 </div>
-                {toggle ? (
-                    <AiOutlineClose onClick={()=>setToggle(!toggle)} size={30} fill='white' className='md:hidden block' />
-                ) : (
-                    <AiOutlineMenu onClick={()=>setToggle(!toggle)} size={30} fill='white' className='md:hidden block'/>
-                )} 
+
             </div>
 
             {/* Responsive Menu */}
-            <div className={` duration-300md:hidden flex flex-col w-[70%] h-screen fixed bg-black/95 text-white top-[80px] ${toggle ? `left-[0]`:`left-[-100%]`} `}>
-                <Link href={"/acercaDe"} className='opacity-90 hover:opacity-50 p-5'>ACERCA DE</Link>
-                <Link href={"/reservas"} className='opacity-90 hover:opacity-50 p-5'>RESERVAS</Link>
-                <Link href={"/cartaOnline"} className='opacity-90 hover:opacity-50 p-5'>CARTA ONLINE</Link>
-                <Link href={"/cartaTakeAway"} className='opacity-90 hover:opacity-50 p-5'>CARTA TAKE AWAY</Link>
-                <Link href={"/contacto"} className='opacity-90 hover:opacity-50 p-5'>CONTACTO</Link>
+            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+                <div className={nav ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-black p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
+                    <div>
+                        <div className='flex w-full items-center justify-between'>
+                            <Image src='/images/las_brazas_cook(light).png'
+                                width={60} 
+                                height={60} 
+                                alt='Logo Las Brasas Cook' 
+                            />
+                            <div onClick={handleNav} className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer'>
+                                <AiOutlineClose fill='white' size={25} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className='py-8 flex flex-col '>
+                        <ul className='py-4 uppercase'>
+                            <Link href={"/acercaDe"}>
+                                <li className='py-4 text-mg text-white opacity-90 hover:opacity-50'>ACERCA DE</li>
+                            </Link>
+                            <Link href={"/reservas"}>
+                                <li className='py-4 text-mg text-white opacity-90 hover:opacity-50'>RESERVAS</li>
+                            </Link>
+                            <Link href={"/cartaOnline"}>
+                                <li className='py-4 text-mg text-white opacity-90 hover:opacity-50'>CARTA ONLINE</li>
+                            </Link>
+                            <Link href={"/cartaTakeAway"}>
+                                <li className='py-4 text-mg text-white opacity-90 hover:opacity-50'>CARTA TAKE AWAY</li>
+                            </Link>
+                            <Link href={"/contacto"}>
+                                <li className='py-4 text-mg text-white opacity-90 hover:opacity-50'>CONTACTO</li>
+                            </Link>
+                        </ul>
+                        <div className='pt-30 mt-20'>
+                            <div className='flex items-center justify-between my-6 w-full sm:w-[80%]'>
+                                <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <AiOutlineSearch fill='white'/> 
+                                </div>
+                                <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <BiSolidUser fill='white'/> 
+                                </div>
+                                <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <FaShoppingCart fill='white'/> 
+                                </div>   
+                            </div>
+                        </div>
+                    </div>   
+                </div>
             </div>
         </div>
     )
