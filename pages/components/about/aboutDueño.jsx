@@ -6,10 +6,11 @@ export default function AboutDueño() {
   return (
     <>
       <section className="md:grid md:grid-cols-2 grid-rows-1 gap-4">
-        <article>
+
+        <article className="grid place-items-center">
           <div className="sm:w-[635px] sm:h-[159px]">
             <h2 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">
-              EL DUEÑO{" "}
+              EL DUEÑO
               <span className="border-b-2 border-yellow-500 inline-block">
                 CRIST
               </span>
@@ -17,7 +18,7 @@ export default function AboutDueño() {
             </h2>
           </div>
           <div className="sm:w-[500px]">
-            <p className=" text-center font-nunito text-base font-normal">
+            <p className=" text-center font-nunito text-base font-normal p-2">
               Nació en 1969 en San Isidro, Buenos Aires. Su abuela Susana y su
               mamá Tatana le inculcaron el amor por la cocina.  Estudió con
               Alicia Berger y con “el Gato” Dumas, y se perfeccionó en el Ritz
@@ -35,8 +36,8 @@ export default function AboutDueño() {
             </p>
           </div>
         </article>
-        <article className=" grid place-content-center sm:flex sm:justify-end sm:flex-col">
-          <div className="">
+        <article className=" grid place-content-center sm:flex sm:flex-col">
+          <div className="flex justify-center p-1">
             <Image
               src={imageDueño2}
               alt="dueño"
@@ -45,7 +46,7 @@ export default function AboutDueño() {
               layout="fixed"
             />
           </div>
-          <div className="p-1">
+          <div className="flex justify-center p-1">
             <Image
               src={imageDueño1}
               alt="perfil"
