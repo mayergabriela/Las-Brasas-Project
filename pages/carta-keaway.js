@@ -1,6 +1,8 @@
+import Image from "next/image";
 import React from "react";
+import imagenQueAgregues from 'public/images/carta-online.jpg'
 
-const Cartatakeaway = () => {
+const Cartakeaway = () => {
   return (
     <>
       <section>
@@ -24,9 +26,9 @@ const Cartatakeaway = () => {
             <h4 className="mt-4">Medios de pago: </h4>
             <p className="mt-5 mb-5">Efectivo, Tarjetas Todas y Mercado Pago</p>
           </div>
-          <img
-            className="object-cover w-full max-h"
-            src="/images/carta-online.jpg"
+          <Image
+             alt="IMg"    
+             src={imagenQueAgregues}
           />
         </div>
       </section>
@@ -35,4 +37,4 @@ const Cartatakeaway = () => {
   );
 };
 
-export default Cartatakeaway;
+export default Cartakeaway;

@@ -12,7 +12,7 @@ const FooterItemsContainer = () => {
       <FooterItem />
       <FooterButton />
       <div className="pt-8 pb-8 text-sm text-center bottom-color-footer">
-        <p>{year} Las Brasas Cook ⓒ | All Rights Reserved </p>
+        <p>2023 Las Brasas Cook ⓒ | All Rights Reserved </p>
       </div>
     </div>
   );

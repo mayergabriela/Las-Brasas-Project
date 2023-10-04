@@ -47,9 +47,9 @@ const FooterItem = () => {
       </div>
 
       <ul>
-        {lista.map((item) => (
-          <li>{item}</li>
-        ))}
+        {/* {lista.map((item) => (
+          {item}
+        ))} */}
       </ul>
     </div>
   );
