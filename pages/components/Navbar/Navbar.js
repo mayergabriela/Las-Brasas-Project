@@ -20,7 +20,7 @@ function Navbar() {
             <div className='container mx-auto w-full h-full flex justify-between items-center px-2 2xl:px-16 py-4'> 
                 <Link href={"/"} className='opacity-90 hover:opacity-50'>
                     <Image 
-                        src='/images/las_brazas_cook(light).png' 
+                        src='/images/logo.png' 
                         width={60} 
                         height={60} 
                         alt='Logo Las Brasas Cook' 
@@ -45,15 +45,15 @@ function Navbar() {
                         </Link>
                     </ul>
                 </div>
-                <div className='hidden md:flex justify-between items-center gap-3 px-4 py-1 opacity-90 hover:opacity-50'>
+                <div className='hidden md:flex justify-between items-center gap-3 px-4 py-1 opacity-90'>
                     <div className='flex items-center justify-between px-6 my-4 w-full gap-6'>
-                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300'>
                             <AiOutlineSearch fill='white'/> 
                         </div>
-                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300'>
                             <BiSolidUser fill='white'/> 
                         </div>
-                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
+                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300'>
                             <FaShoppingCart fill='white'/> 
                         </div>   
                     </div>
@@ -69,7 +69,7 @@ function Navbar() {
                 <div className={nav ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-black p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <Image src='/images/las_brazas_cook(light).png'
+                            <Image src='/images/logo.png'
                                 width={60} 
                                 height={60} 
                                 alt='Logo Las Brasas Cook' 
