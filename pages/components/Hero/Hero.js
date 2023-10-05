@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Navbar from '../Navbar/Navbar'
-import Button from './Button'
+import Button from '../Button'
 
 
 const Hero = () => {
@@ -9,12 +8,12 @@ const Hero = () => {
         <div className='bg-[url("/hero.png")] w-full h-screen bg-cover bg-no-repeat bg-center bg-fixed flex items-center relative'>
             <div className='absolute inset-0 bg-black/30'></div>
             <div className='container max-w-[1240px] w-full h-full px-4 z-10 flex justify-center items-center'>
-                <div className='max-w-[70%] md:max-w-[700px] mx-200 text-white text-center flex flex-col py-2'>
+                <div className='max-w-[60%] md:max-w-[70%] lg:max-w-[650px] mx-200 text-white text-center flex flex-col py-2'>
                     <div>
                         <Image src='/images/logo.png' width={350} height={250} alt='Logo Las Brasas Cook' className='m-auto max-w-[100%]' />
-                        <h1 className='py-6 mt-6 text-md md:text-2xl tracking-wider'>Las Brasas Cook:  Descubre un lugar donde el sabor auténtico de la parrilla cobra vida.</h1>
+                        <h1 className='py-6 mt-6 text-md md:text-xl lg:text-2xl tracking-wider'>Las Brasas Cook:  Descubre un lugar donde el sabor auténtico de la parrilla cobra vida.</h1>
                     </div>
-                    <div className='pt-6'>
+                    <div className='m-2 pt-6'>
                         <Button link="#" text="RESERVAR" />
                     </div>
                 </div>
