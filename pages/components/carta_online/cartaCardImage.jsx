@@ -4,7 +4,7 @@ export default function CartaCard({ imageLocal, title, description }) {
   // blurdataurl{variable} para imagenes que no sean locales
   return (
     <div>
-      <div>
+      <div className="grid place-content-center">
       <Image
         src={imageLocal}
         alt="bebidas"
