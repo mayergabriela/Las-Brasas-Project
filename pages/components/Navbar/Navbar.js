@@ -97,7 +97,7 @@ function Navbar() {
                                 <li className='py-4 text-mg text-white opacity-90 hover:opacity-50'>CONTACTO</li>
                             </Link>
                         </ul>
-                        <div className='pt-30 mt-20'>
+                        <div className='p-30 mt-20'>
                             <div className='flex items-center justify-between my-6 w-full sm:w-[80%]'>
                                 <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <AiOutlineSearch fill='white'/> 
