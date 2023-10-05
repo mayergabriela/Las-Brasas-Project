@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Roboto:wght@300;400&display=swap');
+
+
 :root {
-  --first-color: #ebaa10;
+  --first-color: ;
   --second-color: #b78b22;
   --third-color: #91c73b;
   --fourth-color: #5a7a11;
@@ -12,6 +16,15 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+/************************************** FUENTES TÍTULOS Y PÁRRAFOS **************************************/
+body, h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, h3, p {
+  font-family: 'Nunito', sans-serif;
 }
 
 /************************************** CARDS **************************************/
