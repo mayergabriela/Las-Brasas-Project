@@ -14,7 +14,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-/************************************** CARDS **************************************/
+/* ************************************* CARDS *************************************/
 @layer components {
   .card {
     @apply shadow-lg rounded-xl;
@@ -34,4 +34,4 @@
 }
 .bottom-color-footer {
   background-color: var(--second-color);
-}
+}  

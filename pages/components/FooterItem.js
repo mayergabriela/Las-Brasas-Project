@@ -1,5 +1,3 @@
-import React from "react";
-
 const FooterItem = () => {
   const lista = [
     "Horarios:",
@@ -47,9 +45,9 @@ const FooterItem = () => {
       </div>
 
       <ul>
-        {/* {lista.map((item) => (
-          {item}
-        ))} */}
+        {lista.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </div>
   );

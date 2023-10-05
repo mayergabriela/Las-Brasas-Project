@@ -1,4 +1,3 @@
-import React from "react";
 import FooterItemsContainer from "./FooterItemsContainer";
 
 function Footer() {
