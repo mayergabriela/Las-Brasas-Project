@@ -5,11 +5,11 @@ const FooterImage = () => {
   return (
     <div className="grid place-content-center">
       <Image
-      alt="logo"
       src={logo}
-      width={100}
-      height={181}
+      alt="logo"
       layout="fixed"
+      width={200}
+      priority
       />
     </div>
   );
