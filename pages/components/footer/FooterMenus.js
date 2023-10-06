@@ -1,4 +1,4 @@
-export const FooterMenus = () => {
+export default function FooterMenus () {
   return (
     <section className="grid place-content-center mt-4 mb-4 ">
       <div className="flex flex-col p-1">
@@ -26,4 +26,3 @@ export const FooterMenus = () => {
   );
 };
 
-export default FooterMenus;
