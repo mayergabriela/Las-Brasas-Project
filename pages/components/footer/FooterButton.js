@@ -1,4 +1,3 @@
-
 const FooterButton = () => {
   return (
     <div>
@@ -27,6 +26,24 @@ const FooterButton = () => {
           Contacto
         </button>
       </div>
+      <style jsx>{`
+        .footerButton {
+          width: 300px;
+          height: 40px;
+          color: var(--white-color);
+          background: var(--first-color);
+          border-radius: 8px;
+          border: none;
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+          outline: none;
+        }
+
+        button:hover {
+          background-color: #2c2c2c;
+          color: var(--first-color);
+        }
+      `}</style>
     </div>
   );
 };

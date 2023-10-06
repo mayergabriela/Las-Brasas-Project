@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Roboto:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Roboto:wght@300;400&display=swap");
 
 :root {
-  --first-color: ;
+  --first-color: #ebaa10;
   --second-color: #b78b22;
   --third-color: #91c73b;
   --fourth-color: #5a7a11;
@@ -19,12 +17,15 @@
 }
 
 /************************************** FUENTES TÍTULOS Y PÁRRAFOS **************************************/
-body, h1 {
-  font-family: 'Roboto', sans-serif;
+body,
+h1 {
+  font-family: "Roboto", sans-serif;
 }
 
-h2, h3, p {
-  font-family: 'Nunito', sans-serif;
+h2,
+h3,
+p {
+  font-family: "Nunito", sans-serif;
 }
 
 /************************************** CARDS **************************************/
@@ -34,17 +35,6 @@ h2, h3, p {
   }
 }
 /************************************** FOOTER **************************************/
-.footerButton {
-  width: 300px;
-  height: 40px;
-  color: var(--white-color);
-  background: var(--first-color);
-  border-radius: 8px;
-  border: none;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  outline: none;
-}
 .bottom-color-footer {
   background-color: var(--second-color);
-}  
+}
