@@ -4,7 +4,7 @@ import imagenQueAgregues from "public/images/carta-online.jpg";
 
 const Bannertakeaway = () => {
   return (
-    <section>
+    <section className="w-screen">
       {/*Hero Section Carta Take Away */}
       <div className="relative py-24 text-white bg-center bg-cover ">
         {/*Overlay */}
@@ -24,8 +24,10 @@ const Bannertakeaway = () => {
           <h4 className="mt-4">Medios de pago: </h4>
           <p className="mt-5 mb-5">Efectivo, Tarjetas Todas y Mercado Pago</p>
         </div>
-        <div>
-          <Image layout="responsive" alt="IMg" src={imagenQueAgregues} />
+        <div className="container" >
+          <div className="w-screen flex justify-center bg-black">
+          <Image alt="IMg" layout="fixed" width={1500} src={imagenQueAgregues} />
+          </div>
         </div>
       </div>
     </section>

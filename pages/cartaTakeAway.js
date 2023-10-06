@@ -4,10 +4,10 @@ import Card from "./components/Card/Card";
 
 const CartaTakeAway = () => {
   return (
-    <div className="mt-20">
+    <section>
       <Bannertakeaway />
       <Card />
-    </div>
+    </section>
   );
 };
 
