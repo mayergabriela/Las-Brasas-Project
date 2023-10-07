@@ -28,10 +28,7 @@ function Navbar() {
                 </Link> 
                 <div>
                     <ul className='hidden md:flex gap-10 tracking-wider text-white opacity'>
-                        <Link href={"/acercaDe"}>
-                            <li className='opacity-90 hover:opacity-50'>ACERCA DE</li>
-                        </Link>
-                        <Link href={"/reservas"}>
+                        <Link href={"/reserva"}>
                             <li className='opacity-90 hover:opacity-50'>RESERVAS</li>
                         </Link>
                         <Link href={"/cartaOnline"}>
@@ -40,7 +37,7 @@ function Navbar() {
                         <Link href={"/cartaTakeAway"}>
                             <li className='opacity-90 hover:opacity-50'>CARTA TAKE AWAY</li>
                         </Link>
-                        <Link href={"/contacto"}>
+                        <Link href={"/contact"}>
                             <li className='opacity-90 hover:opacity-50'>CONTACTO</li>
                         </Link>
                     </ul>
