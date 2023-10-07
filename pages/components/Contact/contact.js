@@ -1,7 +1,9 @@
+import ContactoComponent from "./components/contacto-page/contactoComponent"
+
 export default function Contact () {
     return (
         <>
-        <h1>esto seria la seccion contacto</h1>
+        <ContactoComponent/>
         </>
     )
 }
