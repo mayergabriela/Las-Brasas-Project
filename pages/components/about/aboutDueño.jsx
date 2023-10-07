@@ -14,7 +14,7 @@ export default function AboutDueño() {
               <span className="border-b-2 border-yellow-500 inline-block">
                 CRIST
               </span>
-              IAN PETERSON
+              IAN PETERSEN
             </h2>
           </div>
           <div className="sm:w-[500px]">

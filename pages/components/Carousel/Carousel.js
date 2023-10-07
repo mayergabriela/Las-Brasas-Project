@@ -1,5 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Image from 'next/image';
 
@@ -57,7 +59,7 @@ const Carousel = () => {
                     <Image src="/images/Milanesa-con-fritas.jpg" width={800} height={540} alt='Milanesa con fritas' />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/morrones asados.jpg" width={800} height={540} alt='Morrones asados' />
+                    <Image src="/images/morrones-asados.jpg" width={800} height={540} alt='Morrones asados' />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image src="/images/cafe-con-leche.png" width={800} height={540} alt='Café con leche' />
