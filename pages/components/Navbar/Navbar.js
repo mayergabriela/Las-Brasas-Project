@@ -47,10 +47,10 @@ function Navbar() {
                 </div>
                 <div className='hidden md:flex justify-between items-center gap-3 px-4 py-1 opacity-90'>
                     <div className='flex items-center justify-between px-6 my-4 w-full gap-6'>
-                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300'>
+                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10]  p-2 cursor-pointer  hover:opacity-50 hover:scale-105 ease-in duration-300'>
                             <AiOutlineSearch fill='white'/> 
                         </div>
-                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300'>
+                        <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2  cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300'>
                             <BiSolidUser fill='white'/> 
                         </div>
                         <div className='rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300'>
@@ -61,7 +61,6 @@ function Navbar() {
                 <div onClick={handleNav} className='md:hidden'>
                     <AiOutlineMenu fill='white' size={25} />
                 </div>
-
             </div>
 
             {/* Responsive Menu */}
@@ -114,7 +113,7 @@ function Navbar() {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Navbar
