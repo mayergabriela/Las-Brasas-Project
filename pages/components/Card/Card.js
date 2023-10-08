@@ -11,7 +11,6 @@ import Cervezas from "../Products/Cervezas";
 import Vinos from "../Products/Vinos";
 import Bebidas from "../Products/Bebidas";
 
-
 const API = "https://brasas-cook-numen.onrender.com";
 const initial = {
   acompaniamiento: [],
@@ -26,7 +25,7 @@ const initial = {
 
 function Card() {
   const [product, setProduct] = useState(initial);
-  console.log(product.cafeteria.image);
+  console.log(product.cafeteria);
   useEffect(() => {
     try {
       fetch(`${API}/db`)
@@ -43,39 +42,74 @@ function Card() {
   }, []);
 
   return (
-    <div className="container flex flex-wrap justify-center gap-2">
-      {product.menu_principal &&
-        product.menu_principal.map((principal) => (
-          <Principal key={principal.id} principal={principal} />
-        ))}
-      {product.menu_infantil &&
-        product.menu_infantil.map((infantil) => (
-          <Infantil key={infantil.id} infantil={infantil} />
-        ))}
-      {product.postre &&
-        product.postre.map((postre) => (
-          <Postre key={postre.id} postre={postre} />
-        ))}
-      {product.acompaniamiento &&
-        product.acompaniamiento.map((acompaniamiento) => (
-          <Acompaniamiento key={acompaniamiento.id} acompaniamiento={acompaniamiento} />
-        ))}
-      {product.cafeteria &&
-        product.cafeteria.map((cafeteria) => (
-          <Cafeteria key={cafeteria.id} cafeteria={cafeteria} />
-        ))}
-      {product.bebidas &&
-        product.bebidas.map((bebida) => (
-          <Bebidas key={bebida.id} bebida={bebida} />
-        ))}
-      {product.cervezas &&
-        product.cervezas.map((cerveza) => (
-          <Cervezas key={cerveza.id} cerveza={cerveza} />
-        ))}
-      {product.vinos &&
-        product.vinos.map((vino) => (
-          <Vinos key={vino.id} vino={vino} />
-        ))}
+    <div>
+      <h1 className="text-bold text-5xl text-center italic mt-28 ">
+        Menú Principal
+      </h1>
+      <hr />
+      <div className="container flex flex-wrap justify-center gap-2">
+        {product.menu_principal &&
+          product.menu_principal.map((principal) => (
+            <Principal key={principal.id} principal={principal} />
+          ))}
+      </div>
+      <h1 className="text-bold text-5xl text-center italic">Menú Infantil</h1>
+      <hr />
+      <div className="container flex flex-wrap justify-center gap-2">
+        {product.menu_infantil &&
+          product.menu_infantil.map((infantil) => (
+            <Infantil key={infantil.id} infantil={infantil} />
+          ))}
+      </div>
+      <h1 className="text-bold text-5xl text-center italic">Postre</h1>
+      <hr />
+      <div className="container flex flex-wrap justify-center gap-2">
+        {product.postre &&
+          product.postre.map((postre) => (
+            <Postre key={postre.id} postre={postre} />
+          ))}
+      </div>
+      <h1 className="text-bold text-5xl text-center italic">Acompañamiento</h1>
+      <hr />
+      <div className="container flex flex-wrap justify-center gap-2">
+        {product.acompaniamiento &&
+          product.acompaniamiento.map((acompaniamiento) => (
+            <Acompaniamiento
+              key={acompaniamiento.id}
+              acompaniamiento={acompaniamiento}
+            />
+          ))}
+      </div>
+      <h1 className="text-bold text-5xl text-center italic">Cafeteria</h1>
+      <hr />
+      <div className="container flex flex-wrap justify-center gap-2">
+        {product.cafeteria &&
+          product.cafeteria.map((cafeteria) => (
+            <Cafeteria key={cafeteria.id} cafeteria={cafeteria} />
+          ))}
+      </div>
+      <h1 className="text-bold text-5xl text-center italic">Bebidas</h1>
+      <hr />
+      <div className="container flex flex-wrap justify-center gap-2">
+        {product.bebidas &&
+          product.bebidas.map((bebida) => (
+            <Bebidas key={bebida.id} bebida={bebida} />
+          ))}
+      </div>
+      <h1 className="text-bold text-5xl text-center italic">Cervezas</h1>
+      <hr />
+      <div className="container flex flex-wrap justify-center gap-2">
+        {product.cervezas &&
+          product.cervezas.map((cerveza) => (
+            <Cervezas key={cerveza.id} cerveza={cerveza} />
+          ))}
+      </div>
+      <h1 className="text-bold text-5xl text-center italic">Vinos</h1>
+      <hr />
+      <div className="container flex flex-wrap justify-center gap-2">
+        {product.vinos &&
+          product.vinos.map((vino) => <Vinos key={vino.id} vino={vino} />)}
+      </div>
     </div>
   );
 }
