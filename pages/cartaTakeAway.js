@@ -5,7 +5,7 @@ import Card from "./components/Card/Card";
 const CartaTakeAway = () => {
   return (
     <section>
-      <Bannertakeaway />
+      {/* <Bannertakeaway /> */}
       <Card />
     </section>
   );

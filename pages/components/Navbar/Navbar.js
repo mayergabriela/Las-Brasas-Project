@@ -27,7 +27,7 @@ function Navbar() {
                     />
                 </Link> 
                 <div>
-                    <ul className='hidden md:flex gap-10 tracking-wider text-white opacity'>
+                    <ul className='hidden lg:flex gap-10 tracking-wider text-white opacity'>
                         <Link href={"/acercaDe"}>
                             <li className='opacity-90 hover:opacity-50'>ACERCA DE</li>
                         </Link>
