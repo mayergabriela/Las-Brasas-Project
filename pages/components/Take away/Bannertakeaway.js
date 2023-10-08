@@ -34,7 +34,7 @@ const Bannertakeaway = () => {
         <div className="container">
           <div className="flex justify-center w-screen bg-black">
             <Image
-              alt="IMg"
+              alt="Image of meet"
               layout="fixed"
               width={1500}
               src={imagenQueAgregues}
