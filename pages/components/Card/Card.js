@@ -3,17 +3,7 @@
 import { useState, useEffect } from "react";
 /***** COMPONENTS  *****/
 import { CardTemplate } from "./CardTemplate";
-import CardButton from "./CardButton";
-import CardButtonAdd from "./CardButtonAdd";
 /***** API FEATURES  *****/
-import Postre from "../Products/Postre";
-import Acompaniamiento from "../Products/Acompaniamiento";
-import Cafeteria from "../Products/Cafeteria";
-import Principal from "../Products/Principal";
-import Infantil from "../Products/Infantil";
-import Cervezas from "../Products/Cervezas";
-import Vinos from "../Products/Vinos";
-import Bebidas from "../Products/Bebidas";
 
 /* End Point */
 const API = "https://brasas-cook-numen.onrender.com";
