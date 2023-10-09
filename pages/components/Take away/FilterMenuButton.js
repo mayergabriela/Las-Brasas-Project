@@ -5,7 +5,7 @@ export const FilterMenuButton = () => {
     <div>
       {" "}
       {/* Filter Menu Section */}
-      <div className="max-w-[1640px] m-auto px-4 py-1">
+      <div className="max-w-[1640px] m-auto px-3 py-1">
         <h2 className="p-2 text-4xl font-bold text-center text-yellow-500">
           Filtrar menu
         </h2>

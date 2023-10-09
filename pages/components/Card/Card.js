@@ -1,7 +1,10 @@
 "use client";
+/***** REACT FEATURES  *****/
 import { useState, useEffect } from "react";
+/***** COMPONENTS  *****/
 import CardButton from "./CardButton";
 import CardButtonAdd from "./CardButtonAdd";
+/***** API FEATURES  *****/
 import Postre from "../Products/Postre";
 import Acompaniamiento from "../Products/Acompaniamiento";
 import Cafeteria from "../Products/Cafeteria";
@@ -10,6 +13,8 @@ import Infantil from "../Products/Infantil";
 import Cervezas from "../Products/Cervezas";
 import Vinos from "../Products/Vinos";
 import Bebidas from "../Products/Bebidas";
+
+
 
 const API = "https://brasas-cook-numen.onrender.com";
 const initial = {
@@ -24,8 +29,14 @@ const initial = {
 };
 
 function Card() {
+  {
+    /* USE STATE */
+  }
   const [product, setProduct] = useState(initial);
   console.log(product.cafeteria);
+  {
+    /* USE EFFECT */
+  }
   useEffect(() => {
     try {
       fetch(`${API}/db`)
@@ -47,7 +58,7 @@ function Card() {
       <div className="container flex items-center justify-center min-h-screen mx-auto">
         {/* GRID */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* CARD */}
+          {/* Display CARD */}
           <div className="card ">
             <div className="flex flex-col p-5">
               <div className="overflow-hidden rounded-xl">
