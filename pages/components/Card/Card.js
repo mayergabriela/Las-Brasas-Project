@@ -43,17 +43,44 @@ function Card() {
 
   return (
     <div>
-      <h1 className="text-bold text-5xl text-center italic mt-28 ">
+      {/* INICIO  CODIGO CARD GABY */}
+      <div className="container flex items-center justify-center min-h-screen mx-auto">
+        {/* GRID */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {/* CARD */}
+          <div className="card ">
+            <div className="flex flex-col p-5">
+              <div className="overflow-hidden rounded-xl">
+                <img src="" alt="A menu Picture "></img>
+              </div>
+              <h5 className="mt-3 text-2xl font-medium md:text-3xl">
+                Nombre del producto
+              </h5>
+              <p className="mt-3 text-lg text- text-slate-500">
+                $ Precio Producto
+              </p>
+              <CardButton />
+              <CardButtonAdd />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* FIN CODIGO CARD GABY */}
+
+      {/* INICIO CODIGO EDUARDO DE MOSTRAR DATOS  ALA API */}
+      <h1 className="text-5xl italic text-center text-bold mt-28 ">
         Menú Principal
       </h1>
       <hr />
-      <div className="container flex flex-wrap justify-center gap-2">
-        {product.menu_principal &&
-          product.menu_principal.map((principal) => (
-            <Principal key={principal.id} principal={principal} />
-          ))}
+      <div className="className=" card>
+        <div className="container flex flex-wrap justify-center gap-2">
+          {product.menu_principal &&
+            product.menu_principal.map((principal) => (
+              <Principal key={principal.id} principal={principal} />
+            ))}
+        </div>
       </div>
-      <h1 className="text-bold text-5xl text-center italic">Menú Infantil</h1>
+      <h1 className="text-5xl italic text-center text-bold">Menú Infantil</h1>
       <hr />
       <div className="container flex flex-wrap justify-center gap-2">
         {product.menu_infantil &&
@@ -61,7 +88,7 @@ function Card() {
             <Infantil key={infantil.id} infantil={infantil} />
           ))}
       </div>
-      <h1 className="text-bold text-5xl text-center italic">Postre</h1>
+      <h1 className="text-5xl italic text-center text-bold">Postre</h1>
       <hr />
       <div className="container flex flex-wrap justify-center gap-2">
         {product.postre &&
@@ -69,7 +96,7 @@ function Card() {
             <Postre key={postre.id} postre={postre} />
           ))}
       </div>
-      <h1 className="text-bold text-5xl text-center italic">Acompañamiento</h1>
+      <h1 className="text-5xl italic text-center text-bold">Acompañamiento</h1>
       <hr />
       <div className="container flex flex-wrap justify-center gap-2">
         {product.acompaniamiento &&
@@ -80,7 +107,7 @@ function Card() {
             />
           ))}
       </div>
-      <h1 className="text-bold text-5xl text-center italic">Cafeteria</h1>
+      <h1 className="text-5xl italic text-center text-bold">Cafeteria</h1>
       <hr />
       <div className="container flex flex-wrap justify-center gap-2">
         {product.cafeteria &&
@@ -88,7 +115,7 @@ function Card() {
             <Cafeteria key={cafeteria.id} cafeteria={cafeteria} />
           ))}
       </div>
-      <h1 className="text-bold text-5xl text-center italic">Bebidas</h1>
+      <h1 className="text-5xl italic text-center text-bold">Bebidas</h1>
       <hr />
       <div className="container flex flex-wrap justify-center gap-2">
         {product.bebidas &&
@@ -96,7 +123,7 @@ function Card() {
             <Bebidas key={bebida.id} bebida={bebida} />
           ))}
       </div>
-      <h1 className="text-bold text-5xl text-center italic">Cervezas</h1>
+      <h1 className="text-5xl italic text-center text-bold">Cervezas</h1>
       <hr />
       <div className="container flex flex-wrap justify-center gap-2">
         {product.cervezas &&
@@ -104,7 +131,7 @@ function Card() {
             <Cervezas key={cerveza.id} cerveza={cerveza} />
           ))}
       </div>
-      <h1 className="text-bold text-5xl text-center italic">Vinos</h1>
+      <h1 className="text-5xl italic text-center text-bold">Vinos</h1>
       <hr />
       <div className="container flex flex-wrap justify-center gap-2">
         {product.vinos &&
