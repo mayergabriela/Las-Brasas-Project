@@ -50,6 +50,7 @@ const Carousel = () => {
             <SwiperSlide>
               <Image
                 src="/images/Brochette-Lomo.png"
+                alt='img'
                 width={800}
                 height={540}
               />

@@ -27,16 +27,11 @@ function Navbar() {
                     />
                 </Link> 
                 <div>
-<<<<<<< HEAD
                     <ul className='hidden lg:flex gap-10 tracking-wider text-white opacity'>
                         <Link href={"/acercaDe"}>
                             <li className='opacity-90 hover:opacity-50'>ACERCA DE</li>
                         </Link>
                         <Link href={"/reservas"}>
-=======
-                    <ul className='hidden md:flex gap-10 tracking-wider text-white opacity'>
-                        <Link href={"/reserva"}>
->>>>>>> 0714ae86c99d5796ea4802861be327ecc40a0e35
                             <li className='opacity-90 hover:opacity-50'>RESERVAS</li>
                         </Link>
                         <Link href={"/cartaOnline"}>
