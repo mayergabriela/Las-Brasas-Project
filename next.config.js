@@ -4,7 +4,10 @@ const nextConfig = {
   images: {
     remotePatterns:[
       {
-        hostname:""
+        protocol: 'https',
+        hostname: 'console.cloudinary.com',
+        port: '',
+        pathname: '/console/**'
       }
     ]
   }
