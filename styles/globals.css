@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Roboto:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Roboto:wght@300;400&display=swap");
 
 :root {
-  --first-color: ;
+  --first-color: #ebaa10;
   --second-color: #b78b22;
   --third-color: #91c73b;
   --fourth-color: #5a7a11;
@@ -19,12 +17,15 @@
 }
 
 /************************************** FUENTES TÍTULOS Y PÁRRAFOS **************************************/
-body, h1 {
-  font-family: 'Roboto', sans-serif;
+body,
+h1 {
+  font-family: "Roboto", sans-serif;
 }
 
-h2, h3, p {
-  font-family: 'Nunito', sans-serif;
+h2,
+h3,
+p {
+  font-family: "Nunito", sans-serif;
 }
 
 /************************************** CARDS **************************************/
@@ -33,18 +34,64 @@ h2, h3, p {
     @apply shadow-lg rounded-xl;
   }
 }
-/************************************** FOOTER **************************************/
-.footerButton {
-  width: 300px;
-  height: 40px;
-  color: var(--white-color);
-  background: var(--first-color);
-  border-radius: 8px;
-  border: none;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  outline: none;
+/************************************** LOADER **************************************/
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ebaa10;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/************************************** FOOTER **************************************/
 .bottom-color-footer {
   background-color: var(--second-color);
 }

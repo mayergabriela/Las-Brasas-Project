@@ -1,9 +1,15 @@
-// import Image from 'next/image'
+import About from "./components/about/about";
+import Hero from "./components/Hero/Hero";
+import Carousel from "./components/Carousel/Carousel";
 import { Inter } from "next/font/google";
-import Footer from "./components/Footer";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <Hero/>
+      <Carousel />
+      <About />
+    </main>
+  );
 }
