@@ -1,5 +1,3 @@
-import Button from "../footer/Button";
-
 export default function FormularioContacto() {
   return (
     <div>
