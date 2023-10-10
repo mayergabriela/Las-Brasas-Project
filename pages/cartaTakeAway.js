@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./components/Card/Card";
-import Loader from "./components/Take away/Loader";
-import { FilterMenuButton } from "./components/Take away/FilterMenuButton";
-import TakeawayBanner from "./components/Take away/TakeawayBanner";
+import Loader from "./components/Take-away/Loader";
+import { FilterMenuButton } from "./components/Take-away/FilterMenuButton";
+import TakeawayBanner from "./components/Take-away/TakeawayBanner";
 
 const CartaTakeAway = () => {
   return (
