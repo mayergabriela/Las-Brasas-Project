@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch } from 'react-icons/ai'
 import { BiSolidUser } from 'react-icons/bi'
 import { FaShoppingCart } from 'react-icons/fa'
 import { useState } from 'react'
+import logo from '@/public/images/logo.png'
 
 
 function Navbar() {
@@ -19,7 +20,7 @@ function Navbar() {
             <div className='container mx-auto w-full h-full flex justify-between items-center px-2 2xl:px-16 py-4'> 
                 <Link href={"/"} className='opacity-90 hover:opacity-50'>
                     <Image 
-                        src='/images/logo.png' 
+                        src={logo}
                         width={60} 
                         height={60} 
                         alt='Logo Las Brasas Cook' 
