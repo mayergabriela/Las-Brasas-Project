@@ -34,6 +34,7 @@ p {
     @apply shadow-lg rounded-xl;
   }
 }
+
 /************************************** LOADER **************************************/
 .lds-ellipsis {
   display: inline-block;

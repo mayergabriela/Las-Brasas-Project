@@ -47,10 +47,10 @@ function Card() {
 
   return (
     <div>
-      <h2 className="p-2 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
         Menu Principal
       </h2>
-      <div className="flex items-center justify-center mx-auto mcontainer ">
+      <div className="container flex items-center justify-center mx-auto ">
         {/* GRID */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Display CARD MENU PRINCIPAL */}
@@ -60,10 +60,10 @@ function Card() {
             ))}
         </div>
       </div>
-      <h2 className="p-2 mt-8 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
         Menu Infantil
       </h2>
-      <div className="flex items-center justify-center mx-auto mcontainer ">
+      <div className="container flex items-center justify-center mx-auto ">
         {/* GRID */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Display CARD */}
@@ -74,10 +74,10 @@ function Card() {
         </div>
       </div>
       {/* Display CARD Acompañamientos */}
-      <h2 className="p-2 mt-8 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
         Acompañamientos
       </h2>
-      <div className="flex items-center justify-center mx-auto mcontainer ">
+      <div className="container flex items-center justify-center mx-auto ">
         {/* GRID */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Display CARD */}
@@ -88,10 +88,10 @@ function Card() {
         </div>
       </div>
       {/* BEBIDAS */}
-      <h2 className="p-2 mt-8 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
         Bebidas
       </h2>
-      <div className="flex items-center justify-center mx-auto mcontainer ">
+      <div className="container flex items-center justify-center mx-auto ">
         {/* GRID */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Display CARD */}
@@ -102,10 +102,10 @@ function Card() {
         </div>
       </div>
       {/* CAFETERIA */}
-      <h2 className="p-2 mt-8 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
         Bebidas
       </h2>
-      <div className="flex items-center justify-center mx-auto mcontainer ">
+      <div className="container flex items-center justify-center mx-auto ">
         {/* GRID */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Display CARD */}
@@ -116,10 +116,10 @@ function Card() {
         </div>
       </div>
       {/* CAFETERIA */}
-      <h2 className="p-2 mt-8 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
         Postres
       </h2>
-      <div className="flex items-center justify-center mx-auto mcontainer ">
+      <div className="container flex items-center justify-center mx-auto ">
         {/* GRID */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Display CARD */}
