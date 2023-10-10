@@ -1,4 +1,3 @@
-"use client";
 /***** REACT FEATURES  *****/
 import { useState, useEffect } from "react";
 /***** COMPONENTS  *****/
