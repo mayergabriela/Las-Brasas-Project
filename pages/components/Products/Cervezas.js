@@ -10,6 +10,8 @@ function Cervezas({ cerveza }) {
             className="object-contain center"
             src={ cerveza.image }
             alt={ cerveza.name }
+            width={200}
+            height={200}
           />
         </div>
         <h5 className="mt-3 text-2xl font-medium md:text-3xl">
