@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FilterMenuButton ()  {
+export const FilterMenuButton = () => {
   return (
     <div>
       {" "}
