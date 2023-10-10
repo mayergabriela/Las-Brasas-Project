@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect } from "react";
 import CardButton from "./CardButton";
 import CardButtonAdd from "./CardButtonAdd";

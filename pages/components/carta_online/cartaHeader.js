@@ -1,18 +1,20 @@
-import Link from "next/link";
 import CartaCard from "./cartaCardImage";
 import bebidas from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (5).png";
 import menuInfantil from "public/images/carta-online/minihamburguesa-con-tomatitos 1.png";
 import acompañamiento from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (2).png";
 import postres from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (3).png";
 import cafeteria from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (4).png";
-
 import menuPrincipal from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (1).png";
 
 export default function CartaHeader({ imageLocal, title, description }) {
   return (
     <section>
       <div className="flex flex-wrap justify-center bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-        <h1>CARTA ONLINE</h1>
+        <h1>
+          <span className="border-b-2 border-yellow-500 inline-block">
+            CARTA
+          </span> ONLINE
+        </h1>
       </div>
       <article className="grid grid-cols-3 grid-rows-2 gap-5">
         <div className="col-span-1 row-span-2 max-w-sm rounded overflow-hidden shadow-lg">
