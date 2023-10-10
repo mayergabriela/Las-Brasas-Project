@@ -7,8 +7,8 @@ export default function CartaCard({ imageLocal, title, description }) {
       <div className="grid place-content-center">
       <Image
         src={imageLocal}
-        alt="bebidas"
-        blurDataURL="bebida"
+        alt="categorias"
+        blurDataURL="blur"
         placeholder="blur"
       />
       </div>
