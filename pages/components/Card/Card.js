@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-/***** COMPONENTS  *****/
-import { CardTemplate } from "./CardTemplate";
-/***** API FEATURES  *****/
+import CardTemplate from "./CardTemplate";
+
 
 /* End Point */
 const API = "https://brasas-cook-numen.onrender.com";
