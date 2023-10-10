@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 /***** COMPONENTS  *****/
 import CardButton from "./CardButton";
 import CardButtonAdd from "./CardButtonAdd";
 
-export const CardTemplate = ({ product }) => {
+export default function CardTemplate({ product }) {
   return (
     <div className="card ">
       <div className="flex flex-col p-5">
         <div className="overflow-hidden rounded-xl">
-          <Image src={product.image} alt={product.name}/>
-             </div>
+          <Image src={product.image} alt={product.name} />
+        </div>
         <h5 className="mt-3 text-2xl font-medium md:text-3xl">
           {product.name}
         </h5>
@@ -21,4 +21,4 @@ export const CardTemplate = ({ product }) => {
       </div>
     </div>
   );
-};
+}
