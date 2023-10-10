@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
+    "debug": "^4.3.4",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.2",
     "formik": "^2.4.5",
@@ -20,6 +21,7 @@
     "react-icons": "^4.11.0",
     "sharp": "^0.32.6",
     "swiper": "^10.3.1",
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "3.3.3",
+    "uuid": "^7.0.3"
   }
 }
