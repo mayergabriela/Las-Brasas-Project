@@ -1,4 +1,6 @@
+/***** REACT COMPONENTS  *****/
 import React from "react";
+/***** COMPONENTS  *****/
 import Card from "./components/Card/Card";
 import Loader from "./components/Take away/Loader";
 import { FilterMenuButton } from "./components/Take away/FilterMenuButton";

@@ -1,6 +1,9 @@
+/***** REACT  COMPONENTS  *****/
 import React from "react";
+/***** IMAGES IMPORTED  *****/
 import Image from "next/image";
 import imagenQueAgregues from "public/images/carta-online.jpg";
+
 const TakeawayBanner = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-14 ">

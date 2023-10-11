@@ -1,21 +1,20 @@
-
+/***** IMAGES IMPORTED  *****/
 import Image from "next/image";
 import imageAbout2 from "/public/images/aboutImage/img 2.png";
 import imageAbout1 from "/public/images/aboutImage/img 1.png";
 import imageAbout3 from "/public/images/aboutImage/img 3.png";
-// subcomponentes
+/*****  COMPONENTS  *****/
 import AboutDueño from "./aboutDueño";
 import Reserva from "./reserva";
 
 export default function About() {
   return (
     <>
-      <section className="md:flex flex-row-reverse gap-6 justify-center">
-
+      <section className="flex-row-reverse justify-center gap-6 md:flex">
         <article className="md:grid place-content-start">
-          <div className="grid place-items-center my-5">
+          <div className="grid my-5 place-items-center">
             <h2 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">
-              <span className="border-b-2 border-yellow-500 inline-block">
+              <span className="inline-block border-b-2 border-yellow-500">
                 ACER
               </span>
               CA DE NOSOTROS
@@ -23,7 +22,7 @@ export default function About() {
           </div>
 
           <div className="container sm:w-[500px]">
-            <p className="p-2 text-center font-nunito text-base font-normal">
+            <p className="p-2 text-base font-normal text-center font-nunito">
               Las Brasas Cook es un restaurante Argentino pensado para disfrutar
               una excelente comida en familia. El ambiente ameno, la amabilidad
               del personal y la iluminación generan una atmosfera amigable y
@@ -34,18 +33,18 @@ export default function About() {
           </div>
         </article>
 
-        <article className="md:grid grid-cols-3 grid-rows-2 gap-2 place-items-start">
-          <div className=" sm:col-span-3 row-span-1 my-7">
+        <article className="grid-cols-3 grid-rows-2 gap-2 md:grid place-items-start">
+          <div className="row-span-1 sm:col-span-3 my-7">
             <Image
               src={imageAbout2}
               layout="responsive"
               alt="Picture restorant"
             />
           </div>
-          <div className="sm:col-span-1 row-span-1">
+          <div className="row-span-1 sm:col-span-1">
             <Image src={imageAbout1} layout="responsive" alt="lugar" />
           </div>
-          <div className="sm:col-span-2 row-span-1">
+          <div className="row-span-1 sm:col-span-2">
             <Image
               src={imageAbout3}
               layout="responsive"
