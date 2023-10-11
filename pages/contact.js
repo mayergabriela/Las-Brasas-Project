@@ -1,9 +1,10 @@
-import ContactoComponent from "./components/contacto-page/contactoComponent"
+/***** COMPONENTS  *****/
+import ContactoComponent from "./components/contacto-page/contactoComponent";
 
-export default function Contact () {
-    return (
-        <>
-        <ContactoComponent/>
-        </>
-    )
+export default function Contact() {
+  return (
+    <>
+      <ContactoComponent />
+    </>
+  );
 }

@@ -1,9 +1,10 @@
+/***** COMPONENTS  *****/
 import CardButton from "../Card/CardButton";
 import CardButtonAdd from "../Card/CardButtonAdd";
 
 function Infantil({ infantil }) {
   return (
-    <div className="flex items-center justify-center my-28 md: w-80 h-auto">
+    <div className="flex items-center justify-center h-auto my-28 md: w-80">
       <div className="flex flex-col p-5 h-100">
         <div className="overflow-hidden rounded-xl">
           <img

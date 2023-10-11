@@ -1,24 +1,25 @@
+/***** REACT COMPONENTS  *****/
 import Image from "next/image";
+/***** IMAGES IMPORTED  *****/
 import imageDueño2 from "public/images/aboutImage/Christian-img.png";
 import imageDueño1 from "public/images/aboutImage/Chris_P_img.png";
 
 export default function AboutDueño() {
   return (
     <>
-      <section className="md:grid md:grid-cols-2 grid-rows-1 gap-4">
-
+      <section className="grid-rows-1 gap-4 md:grid md:grid-cols-2">
         <article className="grid place-items-center">
           <div className="sm:w-[635px] sm:h-[159px]">
             <h2 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">
               EL DUEÑO
-              <span className="border-b-2 border-yellow-500 inline-block">
+              <span className="inline-block border-b-2 border-yellow-500">
                 CRIST
               </span>
               IAN PETERSEN
             </h2>
           </div>
           <div className="sm:w-[500px]">
-            <p className=" text-center font-nunito text-base font-normal p-2">
+            <p className="p-2 text-base font-normal text-center font-nunito">
               Nació en 1969 en San Isidro, Buenos Aires. Su abuela Susana y su
               mamá Tatana le inculcaron el amor por la cocina.  Estudió con
               Alicia Berger y con “el Gato” Dumas, y se perfeccionó en el Ritz
@@ -36,7 +37,7 @@ export default function AboutDueño() {
             </p>
           </div>
         </article>
-        <article className=" grid place-content-center sm:flex sm:flex-col">
+        <article className="grid place-content-center sm:flex sm:flex-col">
           <div className="flex justify-center p-1">
             <Image
               src={imageDueño2}
