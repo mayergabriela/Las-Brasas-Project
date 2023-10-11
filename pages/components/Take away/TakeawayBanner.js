@@ -9,8 +9,9 @@ const TakeawayBanner = () => {
     <div className="flex flex-col items-center justify-center mt-14 ">
       <div className="grid place-content-center max-w-[1447] mx-auto max-h-[447]">
         <Image
-          className="w-full max-h-[447] bg-contain"
           alt="Image of meat"
+          width={1024}
+          height={326}
           src={imagenQueAgregues}
         />
       </div>
