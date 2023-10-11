@@ -1,6 +1,5 @@
 /***** REACT COMPONENTS  *****/
 import Image from "next/image";
-import Image from "next/image";
 
 export default function CartaCard({ imageLocal, title, description }) {
   // blurdataurl{variable} para imagenes que no sean locales

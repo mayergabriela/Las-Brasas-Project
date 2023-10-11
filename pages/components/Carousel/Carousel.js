@@ -1,8 +1,6 @@
 /***** REACT COMPONENTS  *****/
 import Image from "next/image";
 import React from "react";
-import Image from "next/image";
-import Image from "next/image";
 /***** LIBRARIES IMPORTED  *****/
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

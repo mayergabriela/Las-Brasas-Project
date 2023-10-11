@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 /***** IMAGES IMPORTED *****/
-import Image from "next/image";
 import CartaCard from "./cartaCardImage";
 import bebidas from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (5).png";
 import menuInfantil from "public/images/carta-online/minihamburguesa-con-tomatitos 1.png";
