@@ -10,30 +10,40 @@ export default function AboutDueño() {
       <section className="grid-rows-1 gap-4 md:grid md:grid-cols-2">
         <article className="grid place-items-center">
           <div className="sm:w-[635px] sm:h-[159px]">
-            <h2 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">
+            <h1 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">
               EL DUEÑO
+            </h1>
+            <h2 className="tracking-wider text-center lg:text-4xl md:text-3xl 2xl">
               <span className="inline-block border-b-2 border-yellow-500">
                 CRIST
               </span>
               IAN PETERSEN
             </h2>
           </div>
-          <div className="sm:w-[500px]">
-            <p className="p-2 text-base font-normal text-center font-nunito">
+          <div className="lg:w-[800px] w-[500px]">
+            <p className="p-2 text-base font-normal text-justify">
               Nació en 1969 en San Isidro, Buenos Aires. Su abuela Susana y su
-              mamá Tatana le inculcaron el amor por la cocina.  Estudió con
-              Alicia Berger y con “el Gato” Dumas, y se perfeccionó en el Ritz
-              de París y en Le Cordon Bleu, Francia. Más tarde, completó su
-              formación en la California Culinary Academy, Estados Unidos.  Hace
-              asados desde su adolescencia, tanto para eventos exclusivos como
-              para más de 4500 personas. Como emprendedor lidera diversos
+              mamá Tatana le inculcaron el amor por la cocina.
+            </p>
+            <p className="p-2 text-base font-normal text-justify">
+              Estudió con Alicia Berger y con “el Gato” Dumas, y se perfeccionó
+              en el Ritz de París y en Le Cordon Bleu, Francia. Más tarde,
+              completó su formación en la California Culinary Academy, Estados
+              Unidos.
+            </p>
+            <p className="p-2 text-base font-normal text-justify">
+              Hace asados desde su adolescencia, tanto para eventos exclusivos
+              como para más de 4500 personas. Como emprendedor lidera diversos
               emprendimientos gastronómicos: El restaurant gastronómico Las
-              Brasas Cook, en Buenos Aires. Durante la pandemia creó P_Milas,
-              un catering de milanesas de alta calidad congeladas y, junto con
+              Brasas Cook, en Buenos Aires. Durante la pandemia creó P_Milas, un
+              catering de milanesas de alta calidad congeladas y, junto con
               Germán Torres, dirige la panadería de autor La Valiente. Además,
-              es productor ganadero.  Trabaja en televisión desde hace más de
-              veinte años (Utilísima, El Gourmet, Canal 13). Ganó dos premios
-              Martín Fierro al Mejor Programa de Cocina por su labor televisiva.
+              es productor ganadero.
+            </p>
+            <p className="p-2 text-base font-normal text-justify">
+              Trabaja en televisión desde hace más de veinte años (Utilísima, El
+              Gourmet, Canal 13). Ganó dos premios Martín Fierro al Mejor
+              Programa de Cocina por su labor televisiva.
             </p>
           </div>
         </article>
