@@ -21,17 +21,17 @@ export default function AboutDueño() {
             </h2>
           </div>
           <div className="lg:w-[800px] w-[500px]">
-            <p className="p-2 text-base font-normal text-justify">
+            <p className="p-2 text-2xl font-normal text-justify font-nunito">
               Nació en 1969 en San Isidro, Buenos Aires. Su abuela Susana y su
               mamá Tatana le inculcaron el amor por la cocina.
             </p>
-            <p className="p-2 text-base font-normal text-justify">
+            <p className="p-2 text-2xl font-normal text-justify font-nunito">
               Estudió con Alicia Berger y con “el Gato” Dumas, y se perfeccionó
               en el Ritz de París y en Le Cordon Bleu, Francia. Más tarde,
               completó su formación en la California Culinary Academy, Estados
               Unidos.
             </p>
-            <p className="p-2 text-base font-normal text-justify">
+            <p className="p-2 text-2xl font-normal text-justify font-nunito">
               Hace asados desde su adolescencia, tanto para eventos exclusivos
               como para más de 4500 personas. Como emprendedor lidera diversos
               emprendimientos gastronómicos: El restaurant gastronómico Las
@@ -40,7 +40,7 @@ export default function AboutDueño() {
               Germán Torres, dirige la panadería de autor La Valiente. Además,
               es productor ganadero.
             </p>
-            <p className="p-2 text-base font-normal text-justify">
+            <p className="p-2 text-2xl font-normal text-justify font-nunito">
               Trabaja en televisión desde hace más de veinte años (Utilísima, El
               Gourmet, Canal 13). Ganó dos premios Martín Fierro al Mejor
               Programa de Cocina por su labor televisiva.
@@ -52,8 +52,8 @@ export default function AboutDueño() {
             <Image
               src={imageDueño2}
               alt="dueño"
-              width={300}
-              height={200}
+              width={400}
+              height={300}
               layout="fixed"
             />
           </div>
@@ -61,8 +61,8 @@ export default function AboutDueño() {
             <Image
               src={imageDueño1}
               alt="perfil"
-              width={300}
-              height={200}
+              width={400}
+              height={300}
               layout="fixed"
             />
           </div>
