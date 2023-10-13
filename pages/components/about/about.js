@@ -21,14 +21,17 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="container sm:w-[500px]">
-            <p className="p-2 text-base font-normal text-center font-nunito">
+          <div className="g:w-[800px] w-[500px]">
+            <p className="p-2 text-2xl font-normal text-justify font-nunito">
               Las Brasas Cook es un restaurante Argentino pensado para disfrutar
               una excelente comida en familia. El ambiente ameno, la amabilidad
               del personal y la iluminación generan una atmosfera amigable y
-              relajante. El restaurante presenta un diseño industrial, con
-              terminaciones en madera y ladrillos a la vista que invita al
-              comensal a sentarse y disfrutar de un hermoso momento.
+              relajante.
+            </p>
+            <p className="p-2 text-2xl font-normal text-justify font-nunito">
+              El restaurante presenta un diseño industrial, con terminaciones en
+              madera y ladrillos a la vista que invita al comensal a sentarse y
+              disfrutar de un hermoso momento.
             </p>
           </div>
         </article>

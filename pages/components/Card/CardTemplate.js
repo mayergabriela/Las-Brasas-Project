@@ -19,6 +19,16 @@ export const CardTemplate = ({ product }) => {
         <CardButton />
         <CardButtonAdd />
       </div>
+      <style jsx>
+        {`
+          img {
+            height: 280px;
+            width: 450.67px;
+            object-fit: cover;
+            border-radius: 15px;
+          }
+        `}
+      </style>
     </div>
   );
 };
