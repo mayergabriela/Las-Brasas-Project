@@ -1,8 +1,8 @@
 /***** REACT COMPONENTS  *****/
-import Image from "next/image";
-/***** LIBRARIES IMPORTED  *****/
 import { AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
+/***** LIBRARIES IMPORTED  *****/
+
 
 export default function MapaContacto() {
   return (
