@@ -7,9 +7,15 @@ import { BiSolidUser } from "react-icons/bi";
 import { FaShoppingCart } from "react-icons/fa";
 /***** IMAGE IMPORTED  *****/
 import Image from "next/image";
+import { useCart } from "@/pages/hooks/useCart";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+
+  const { cart } = useCart();
+
+  // Calcular la cantidad total de productos en el carrito
+  const totalQuantity = cart.reduce((total, product) => total + product.quantity, 0);
 
   const handleNav = () => {
     setNav(!nav);
@@ -53,9 +59,16 @@ function Navbar() {
             <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2  cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
               <BiSolidUser fill="white" />
             </div>
-            <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
-              <FaShoppingCart fill="white" />
-            </div>
+            <Link href={"/cart"}>
+              <div className="relative rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
+                <FaShoppingCart fill="white" />
+                {totalQuantity > 0 && (
+                  <div className=" absolute -top-2 -right-3 w-5 h-5 bg-red-500 text-white text-xs flex items-center justify-center rounded-full">
+                    {totalQuantity}
+                  </div>
+                )}
+              </div>
+            </Link>
           </div>
         </div>
         <div onClick={handleNav} className="md:hidden">

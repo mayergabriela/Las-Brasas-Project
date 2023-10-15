@@ -15,7 +15,7 @@ const CartaTakeAway = () => {
       {/* <Filter Menu /> */}
       <FilterMenuButton />
       <div className="flex justify-center">
-        <Loader />
+        {/* <Loader /> SACAR EL COMENTARIO*/}
       </div>
       {/* Cards Display Section */}
       <Card />

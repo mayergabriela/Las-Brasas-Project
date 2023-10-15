@@ -24,7 +24,7 @@ function Card() {
     /* USE STATE */
   }
   const [product, setProduct] = useState(initial);
-  console.log(product);
+  //console.log(product);
   {
     /* USE EFFECT */
   }
