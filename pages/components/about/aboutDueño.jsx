@@ -7,31 +7,31 @@ import imageDueño1 from "public/images/aboutImage/Chris_P_img.png";
 export default function AboutDueño() {
   return (
     <>
-      <section className="grid-rows-1 gap-4 md:grid md:grid-cols-2">
+      <section className="grid-rows-1 gap-4 md:grid md:grid-cols-2 mb-10">
         <article className="grid place-items-center">
           <div className="sm:w-[635px] sm:h-[159px]">
-            <h1 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">
+            <h1 className="font-roboto text-3xl lg:text-5xl md:text-4xl font-normal leading-14 tracking-normal text-center p-[1rem]">
               EL DUEÑO
             </h1>
-            <h2 className="tracking-wider text-center lg:text-4xl md:text-3xl 2xl">
+            <h2 className="tracking-wider text-center lg:text-5xl md:text-4xl text-3xl">
               <span className="inline-block border-b-2 border-yellow-500">
                 CRIST
               </span>
               IAN PETERSEN
             </h2>
           </div>
-          <div className="lg:w-[800px] w-[500px]">
-            <p className="p-2 text-2xl font-normal text-justify font-nunito">
+          <div className="lg:w-[800px] w-[500px] my-5">
+            <p className="p-2 lg:text-2xl text-xl font-normal text-justify font-nunito">
               Nació en 1969 en San Isidro, Buenos Aires. Su abuela Susana y su
               mamá Tatana le inculcaron el amor por la cocina.
             </p>
-            <p className="p-2 text-2xl font-normal text-justify font-nunito">
+            <p className="p-2 lg:text-2xl text-xl font-normal text-justify font-nunito">
               Estudió con Alicia Berger y con “el Gato” Dumas, y se perfeccionó
               en el Ritz de París y en Le Cordon Bleu, Francia. Más tarde,
               completó su formación en la California Culinary Academy, Estados
               Unidos.
             </p>
-            <p className="p-2 text-2xl font-normal text-justify font-nunito">
+            <p className="p-2 lg:text-2xl text-xl font-normal text-justify font-nunito">
               Hace asados desde su adolescencia, tanto para eventos exclusivos
               como para más de 4500 personas. Como emprendedor lidera diversos
               emprendimientos gastronómicos: El restaurant gastronómico Las
@@ -40,7 +40,7 @@ export default function AboutDueño() {
               Germán Torres, dirige la panadería de autor La Valiente. Además,
               es productor ganadero.
             </p>
-            <p className="p-2 text-2xl font-normal text-justify font-nunito">
+            <p className="p-2 lg:text-2xl text-xl font-normal text-justify font-nunito">
               Trabaja en televisión desde hace más de veinte años (Utilísima, El
               Gourmet, Canal 13). Ganó dos premios Martín Fierro al Mejor
               Programa de Cocina por su labor televisiva.

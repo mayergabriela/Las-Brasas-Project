@@ -12,8 +12,8 @@ export default function About() {
     <>
       <section className="flex-row-reverse justify-center gap-6 md:flex">
         <article className="md:grid place-content-start">
-          <div className="grid my-5 place-items-center">
-            <h2 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">
+          <div className="grid my-5 place-items-center md:px-3">
+            <h2 className="font-roboto text-3xl lg:text-5xl md:text-4xl font-normal leading-14 tracking-normal text-center p-[1rem]">
               <span className="inline-block border-b-2 border-yellow-500">
                 ACER
               </span>
@@ -22,13 +22,13 @@ export default function About() {
           </div>
 
           <div className="g:w-[800px] w-[500px]">
-            <p className="p-2 text-2xl font-normal text-justify font-nunito">
+            <p className="p-2 lg:text-2xl text-xl font-normal text-justify">
               Las Brasas Cook es un restaurante Argentino pensado para disfrutar
               una excelente comida en familia. El ambiente ameno, la amabilidad
               del personal y la iluminación generan una atmosfera amigable y
               relajante.
             </p>
-            <p className="p-2 text-2xl font-normal text-justify font-nunito">
+            <p className="p-2 lg:text-2xl text-xl font-normal text-justify">
               El restaurante presenta un diseño industrial, con terminaciones en
               madera y ladrillos a la vista que invita al comensal a sentarse y
               disfrutar de un hermoso momento.
