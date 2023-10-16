@@ -2,12 +2,17 @@ import { useCart } from "@/pages/hooks/useCart";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { MdOutlineAddBox } from "react-icons/md";
 import Image from "next/image";
+import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { useContext } from "react";
 
 const CartItem = () => {
   const { cart, clearCart, removeFromCart, addToCart } = useCart();
-
   // Verificar si el carrito está vacío
   const isCartEmpty = cart.length === 0;
+  
+  const data = useContext(ThemeContext);
+  const [ theme ] = data;
+
   return (
     <div className="container mx-auto">
       {isCartEmpty ? (
@@ -15,9 +20,9 @@ const CartItem = () => {
           <p className="text-5xl w-1/2 text-center bg-black/75 text-gray-300">No hay productos en el carrito</p>
         </div>
       ) : (
-        <div className="h-screen">
+        <div className="h-screen" >
           <table className="w-full text-sm text-gray-500 dark:text-gray-400 text-center my-8">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <thead className={`text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ${theme}`}>
               <tr>
                 <th></th>
                 <th scope="col" className="px-6 py-3">
@@ -35,16 +40,16 @@ const CartItem = () => {
               </tr>
             </thead>
             {cart.map((product) => (
-              <tbody key={product.id}>
+              <tbody key={product.id} >
                 <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                  <th>
+                  <th className={theme}>
                     <button onClick={() => removeFromCart(product)}>
                       <AiFillCloseCircle fill="red" size={25} />
                     </button>
                   </th>
                   <th
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                    className={`px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white ${theme}`}
                   >
                     <Image
                       src={product.image}
@@ -54,8 +59,8 @@ const CartItem = () => {
                       className="mx-auto"
                     />
                   </th>
-                  <td className="px-6 py-4">{product.name}</td>
-                  <td className="px-6 py-4">
+                  <td className={`px-6 py-4 ${theme}`}>{product.name}</td>
+                  <td className={`px-6 py-4 ${theme}`}>
                     <td className="px-6 py-4 flex justify-center gap-2">
                       <p>{product.quantity} </p>
                       <button onClick={() => addToCart(product)}>
@@ -63,7 +68,7 @@ const CartItem = () => {
                       </button>
                     </td>
                   </td>
-                  <td className="px-6 py-4">
+                  <td className={`px-6 py-4 ${theme}`}>
                     $ {product.quantity * product.price}
                   </td>
                 </tr>

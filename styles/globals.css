@@ -35,6 +35,18 @@ p {
   }
 }
 
+/************************************** Dark & Light **************************************/
+
+.dark{
+  background-color: #000 ;
+  opacity: 0.7;
+  color: #ffffff ;
+}
+
+.light{
+  background-color: #ffffff;
+  color: #000;
+}
 /************************************** LOADER **************************************/
 .lds-ellipsis {
   display: inline-block;
@@ -98,7 +110,7 @@ p {
 }
 
 
-/************************************** borrar al final **************************************/
+/************************************** Footer para diseño en desarrollo **************************************/
 
 .footerShowCart {
   position: fixed;

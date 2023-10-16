@@ -5,6 +5,12 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { BiSolidUser } from "react-icons/bi";
 import { FaShoppingCart } from "react-icons/fa";
+import { BsSunFill } from "react-icons/bs";
+import { BsFillMoonFill } from "react-icons/bs";
+
+import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { useContext } from "react";
+
 /***** IMAGE IMPORTED  *****/
 import Image from "next/image";
 import { useCart } from "@/pages/hooks/useCart";
@@ -14,8 +20,15 @@ function Navbar() {
 
   const { cart } = useCart();
 
+  const data = useContext(ThemeContext);
+
+  const [ theme, toggleTheme ] = data;
+
   // Calcular la cantidad total de productos en el carrito
-  const totalQuantity = cart.reduce((total, product) => total + product.quantity, 0);
+  const totalQuantity = cart.reduce(
+    (total, product) => total + product.quantity,
+    0
+  );
 
   const handleNav = () => {
     setNav(!nav);
@@ -53,6 +66,13 @@ function Navbar() {
         </div>
         <div className="items-center justify-between hidden gap-3 px-4 py-1 md:flex opacity-90">
           <div className="flex items-center justify-between w-full gap-6 px-6 my-4">
+            <button
+              className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer  hover:opacity-50 hover:scale-105 ease-in duration-300"
+              onClick={toggleTheme}
+            >
+              {theme === "light" ? <BsFillMoonFill /> : <BsSunFill fill="black" />}
+            </button>
+
             <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10]  p-2 cursor-pointer  hover:opacity-50 hover:scale-105 ease-in duration-300">
               <AiOutlineSearch fill="white" />
             </div>
