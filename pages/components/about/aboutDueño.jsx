@@ -12,7 +12,7 @@ export default function AboutDueño() {
   const [ theme ] = data;
   return (
     <div className={theme}>
-      <section className="grid-rows-1 gap-4 md:grid md:grid-cols-2">
+      <section className="grid-rows-1 gap-4 mt-20 md:grid md:grid-cols-2">
         <article className="grid place-items-center">
           <div className="sm:w-[635px] sm:h-[159px]">
             <h1 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">

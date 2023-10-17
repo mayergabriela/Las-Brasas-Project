@@ -1,5 +1,4 @@
 /***** COMPONENTS  *****/
-import About from "./components/about/About";
 import Hero from "./components/Hero/Hero";
 import Carousel from "./components/Carousel/Carousel";
 import TakeawayBanner from "./components/Take away/TakeawayBanner";
@@ -9,12 +8,11 @@ import { useContext } from "react";
 export default function Home() {
   const data = useContext(ThemeContext);
 
-  const [ theme ] = data;
+  const [theme] = data;
   return (
     <main className={theme}>
       <Hero />
       <Carousel />
-      <About />
       <TakeawayBanner />
     </main>
   );
