@@ -2,13 +2,17 @@
 import Image from "next/image";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
-/** IMAGES IMPORTED  **/
+import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { useContext } from "react";
 
-import React from "react";
+const Reserva = () => {
 
-const reserva = () => {
+  const data = useContext(ThemeContext);
+
+  const [ theme ] = data;
+
   return (
-    <div className="max-w-[1980px] mx-auto p-4 ">
+    <div className={`max-w-[1980px] mx-auto p-4 ${theme}`} >
       {" "}
       <div className="max-h-[550px] relative">
         {" "}
@@ -51,4 +55,4 @@ const reserva = () => {
   );
 };
 
-export default reserva;
+export default Reserva;

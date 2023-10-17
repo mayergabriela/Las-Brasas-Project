@@ -1,9 +1,14 @@
-import React from "react";
+import { useCart } from "@/pages/hooks/useCart";
 
-const CardButtonAdd = () => {
+const CardButtonAdd = ({ product }) => {
+  const { addToCart } = useCart();
+
   return (
     <>
-      <button className="mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg opacity-70 footerButton ">
+      <button
+        className="mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg opacity-70 footerButton"
+        onClick={() => addToCart(product)}
+      >
         Agregar al carrito
       </button>
 

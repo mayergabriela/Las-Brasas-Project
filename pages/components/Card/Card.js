@@ -24,7 +24,7 @@ function Card() {
     /* USE STATE */
   }
   const [product, setProduct] = useState(initial);
-  console.log(product);
+  //console.log(product);
   {
     /* USE EFFECT */
   }
@@ -47,20 +47,25 @@ function Card() {
 
   return (
     <div>
-      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
-        Menu Principal
-      </h2>
-      <div className="container flex items-center justify-center mx-auto ">
-        {/* GRID */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* Display CARD MENU PRINCIPAL */}
-          {product.menu_principal &&
-            product.menu_principal.map((principal) => (
-              <CardTemplate key={principal.id} product={principal} />
-            ))}
+     
+        <h2
+          className="p-2 my-20 text-4xl font-bold text-center text-yellow-500"
+          id="Menu_principal"
+        >
+          Menu Principal
+        </h2>
+        <div className="container flex items-center justify-center mx-auto ">
+          {/* GRID */}
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* Display CARD MENU PRINCIPAL */}
+            {product.menu_principal &&
+              product.menu_principal.map((principal) => (
+                <CardTemplate key={principal.id} product={principal} />
+              ))}
+          </div>
         </div>
-      </div>
-      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
+
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500" id="Menu_infantil">
         Menu Infantil
       </h2>
       <div className="container flex items-center justify-center mx-auto ">
@@ -74,7 +79,7 @@ function Card() {
         </div>
       </div>
       {/* Display CARD Acompañamientos */}
-      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500" id="Acompañamiento">
         Acompañamientos
       </h2>
       <div className="container flex items-center justify-center mx-auto ">
@@ -88,7 +93,7 @@ function Card() {
         </div>
       </div>
       {/* BEBIDAS */}
-      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500" id="Bebidas">
         Bebidas
       </h2>
       <div className="container flex items-center justify-center mx-auto ">
@@ -102,8 +107,8 @@ function Card() {
         </div>
       </div>
       {/* CAFETERIA */}
-      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
-        Bebidas
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500" id="Cafeteria">
+        Cafetería
       </h2>
       <div className="container flex items-center justify-center mx-auto ">
         {/* GRID */}
@@ -116,7 +121,7 @@ function Card() {
         </div>
       </div>
       {/* CAFETERIA */}
-      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500">
+      <h2 className="p-2 my-20 text-4xl font-bold text-center text-yellow-500" id="Postres">
         Postres
       </h2>
       <div className="container flex items-center justify-center mx-auto ">
