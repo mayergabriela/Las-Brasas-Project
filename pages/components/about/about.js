@@ -5,7 +5,7 @@ import imageAbout1 from "/public/images/aboutImage/img 1.png";
 import imageAbout3 from "/public/images/aboutImage/img 3.png";
 /*****  COMPONENTS  *****/
 import AboutDueño from "./AboutDueño";
-import Reserva from "./Reserva";
+
 
 export default function About() {
   return (
@@ -57,7 +57,6 @@ export default function About() {
         </article>
       </section>
       <AboutDueño></AboutDueño>
-      <Reserva></Reserva>
     </div>
   );
 }

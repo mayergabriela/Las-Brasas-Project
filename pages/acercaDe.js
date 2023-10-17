@@ -10,7 +10,7 @@ const acercaDe = () => {
   const [theme] = data;
   return (
     <main className={theme}>
-      <div className="mt-20">
+      <div className="py-20">
         <About />
       </div>
     </main>
