@@ -17,7 +17,7 @@ export const CardTemplate = ({ product }) => {
         <p className="mt-3 text-lg text- text-slate-500">{product.price}</p>
         {product.description}
         <CardButton />
-        <CardButtonAdd />
+        <CardButtonAdd product={product} />
       </div>
       <style jsx>
         {`

@@ -5,6 +5,7 @@ import Image from "next/image";
 /*****  COMPONENTS  *****/
 import Button from "../footer/Button";
 
+
 const Hero = () => {
   return (
     <div className='bg-[url("/hero.png")] w-full h-screen bg-cover bg-no-repeat bg-center bg-fixed flex items-center relative'>
