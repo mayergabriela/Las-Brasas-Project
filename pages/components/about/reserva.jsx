@@ -6,13 +6,12 @@ import { ThemeContext } from "@/pages/context/ThemeContextProvider";
 import { useContext } from "react";
 
 const Reserva = () => {
-
   const data = useContext(ThemeContext);
 
-  const [ theme ] = data;
+  const [theme] = data;
 
   return (
-    <div className={`max-w-[1980px] mx-auto p-4 ${theme}`} >
+    <div className={`max-w-[1980px] mx-auto p-4 ${theme}`}>
       {" "}
       <div className="max-h-[550px] relative">
         {" "}
