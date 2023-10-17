@@ -14,7 +14,7 @@ const FooterItemsContainer = () => {
         <FooterButton />
       </div>
       <div className="w-auto pt-8 pb-8 text-sm text-center bottom-color-footer">
-        <p>2023 Las Brasas Cook ⓒ | All Rights Reserved </p>
+        <p className="text-xl">2023 Las Brasas Cook ⓒ | All Rights Reserved </p>
       </div>
     </section>
   );
