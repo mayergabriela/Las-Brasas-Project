@@ -19,7 +19,11 @@ const CartaTakeAway = () => {
       </div>
       {/* <Filter Menu /> */}
       <FilterMenuButton />
+
       <div className="flex justify-center"></div>
+
+      <div className="flex justify-center">
+   
       {/* Cards Display Section */}
       <Card />
       {/* El loader se muestra solo cuando se esta cargando la data */}
