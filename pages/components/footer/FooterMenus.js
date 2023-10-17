@@ -3,11 +3,11 @@ export default function FooterMenus() {
     <section className="grid mt-4 mb-8 place-content-center ">
       <div className="flex flex-col p-1">
         <ul>
-          <li className="mb-4 ">Rodriguez Peña 682, CABA</li>
-          <li className="mb-4">info@LasBrasasCook.com</li>
+          <li className="mb-4 text-2xl ">Rodriguez Peña 682, CABA</li>
+          <li className="mb-4 text-2xl">info@LasBrasasCook.com</li>
         </ul>
       </div>
-      <div className="flex flex-row-reverse justify-end">
+      <div className="flex flex-row-reverse justify-end text-2xl">
         <ul className="flex flex-col justify-center p-1 justify-items-center">
           <li className="mb-4"> +54116509428</li>
         </ul>

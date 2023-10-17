@@ -9,7 +9,7 @@ const FooterItem = () => {
   return (
     <div>
       <div>
-        <p className="mt-4 mb-4">Seguinos en:</p>
+        <p className="mt-4 mb-4 text-2xl">Seguinos en:</p>
         <div className="flex items-center justify-center mt-4 mb-4 ">
           <svg
             className="mx-3 mt-4 center"
@@ -44,7 +44,7 @@ const FooterItem = () => {
         </div>
       </div>
 
-      <ul>
+      <ul className="text-2xl">
         {lista.map((item) => (
           <li key={item}>{item}</li>
         ))}
