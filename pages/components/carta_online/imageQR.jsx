@@ -1,0 +1,28 @@
+import React from "react";
+import Image from "next/image";
+import { useQRCode } from "next-qrcode";
+
+function App() {
+  const { Image } = useQRCode();
+
+  return (
+    <Image
+      text={"https://"}
+      alt={'qr'}
+      options={{
+        type: "image/jpeg",
+        quality: 0.3,
+        errorCorrectionLevel: "M",
+        margin: 3,
+        scale: 4,
+        width: 200,
+        color: {
+          dark: "#010599FF",
+          light: "#FFBF60FF",
+        },
+      }}
+    />
+  );
+}
+
+export default App;

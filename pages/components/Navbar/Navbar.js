@@ -39,7 +39,7 @@ function Navbar() {
                         <Link href={"/cartaTakeAway"}>
                             <li className='opacity-90 hover:opacity-50'>CARTA TAKE AWAY</li>
                         </Link>
-                        <Link href={"/contact"}>
+                        <Link href={"/contacto"}>
                             <li className='opacity-90 hover:opacity-50'>CONTACTO</li>
                         </Link>
                     </ul>
