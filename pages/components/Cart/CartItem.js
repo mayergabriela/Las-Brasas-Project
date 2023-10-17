@@ -9,20 +9,24 @@ const CartItem = () => {
   const { cart, clearCart, removeFromCart, addToCart } = useCart();
   // Verificar si el carrito está vacío
   const isCartEmpty = cart.length === 0;
-  
+
   const data = useContext(ThemeContext);
-  const [ theme ] = data;
+  const [theme] = data;
 
   return (
     <div className="container mx-auto">
       {isCartEmpty ? (
-        <div className="flex flex-col justify-center items-center w-full h-screen">
-          <p className="text-5xl w-1/2 text-center bg-black/75 text-gray-300">No hay productos en el carrito</p>
+        <div className="flex flex-col items-center justify-center w-full h-screen">
+          <p className="w-1/2 text-5xl text-center text-gray-300 bg-black/75">
+            No hay productos en el carrito
+          </p>
         </div>
       ) : (
-        <div className="h-screen" >
-          <table className="w-full text-sm text-gray-500 dark:text-gray-400 text-center my-8">
-            <thead className={`text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ${theme}`}>
+        <div className="h-screen">
+          <table className="w-full my-8 text-sm text-center text-gray-500 dark:text-gray-400">
+            <thead
+              className={`text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ${theme}`}
+            >
               <tr>
                 <th></th>
                 <th scope="col" className="px-6 py-3">
@@ -40,7 +44,7 @@ const CartItem = () => {
               </tr>
             </thead>
             {cart.map((product) => (
-              <tbody key={product.id} >
+              <tbody key={product.id}>
                 <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                   <th className={theme}>
                     <button onClick={() => removeFromCart(product)}>
@@ -61,10 +65,10 @@ const CartItem = () => {
                   </th>
                   <td className={`px-6 py-4 ${theme}`}>{product.name}</td>
                   <td className={`px-6 py-4 ${theme}`}>
-                    <td className="px-6 py-4 flex justify-center gap-2">
+                    <td className="flex justify-center gap-2 px-6 py-4">
                       <p>{product.quantity} </p>
                       <button onClick={() => addToCart(product)}>
-                        <MdOutlineAddBox fill="green" size={20}/>
+                        <MdOutlineAddBox fill="green" size={20} />
                       </button>
                     </td>
                   </td>
@@ -82,7 +86,7 @@ const CartItem = () => {
                 <td></td>
                 <td>
                   <button
-                    className="mt-4 font-semibold text-center text-white w-28 h-10 duration-300 ease-out rounded-lg opacity-70"
+                    className="h-10 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg w-28 opacity-70"
                     style={{ backgroundColor: "red" }}
                     onClick={() => clearCart()}
                   >

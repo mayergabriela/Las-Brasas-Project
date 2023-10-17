@@ -12,6 +12,7 @@ export default function FooterMenus() {
           <li className="mb-4"> +54116509428</li>
         </ul>
         <svg
+          className="duration-300 ease-in cursor-pointer hover:opacity-50 hover:scale-105"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="white"
