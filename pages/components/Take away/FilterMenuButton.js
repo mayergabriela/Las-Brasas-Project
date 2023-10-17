@@ -1,5 +1,5 @@
 /***** REACT COMPONENTS  *****/
-import React from "react";
+import Link from "next/link";
 
 export const FilterMenuButton = () => {
   return (
@@ -13,24 +13,36 @@ export const FilterMenuButton = () => {
       </div>
       {/*Filter Row */}
       <div className="flex flex-wrap gap-4 m-10 ">
-        <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
-          Todos
-        </button>
-        <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
-          Menu Infantil
-        </button>
-        <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
-          Acompañamiento
-        </button>
-        <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
-          Bebidas
-        </button>
-        <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
-          Cafeteria
-        </button>
-        <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
-          Postres
-        </button>
+        <Link href={"#Menu_principal"}>
+          <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
+            Todos
+          </button>
+        </Link>
+        <Link href={"#Menu_infantil"}>
+          <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
+            Menu Infantil
+          </button>
+        </Link>
+        <Link href={"#Acompañamiento"}>
+          <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
+            Acompañamiento
+          </button>
+        </Link>
+        <Link href={"#Bebidas"}>
+          <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
+            Bebidas
+          </button>
+        </Link>
+        <Link href={"#Cafeteria"}>
+          <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
+            Cafeteria
+          </button>
+        </Link>
+        <Link href={"#Postres"}>
+          <button className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg p focus:scale-95">
+            Postres
+          </button>
+        </Link>
 
         <style jsx>{`
           button {

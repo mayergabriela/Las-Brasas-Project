@@ -3,10 +3,15 @@ import Image from "next/image";
 /***** IMAGES IMPORTED  *****/
 import imageDueño2 from "public/images/aboutImage/Christian-img.png";
 import imageDueño1 from "public/images/aboutImage/Chris_P_img.png";
+import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { useContext } from "react";
 
 export default function AboutDueño() {
+  const data = useContext(ThemeContext);
+
+  const [ theme ] = data;
   return (
-    <>
+    <div className={theme}>
       <section className="grid-rows-1 gap-4 md:grid md:grid-cols-2">
         <article className="grid place-items-center">
           <div className="sm:w-[635px] sm:h-[159px]">
@@ -68,6 +73,6 @@ export default function AboutDueño() {
           </div>
         </article>
       </section>
-    </>
+    </div>
   );
 }
