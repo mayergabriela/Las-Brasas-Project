@@ -20,7 +20,10 @@ const CartaTakeAway = () => {
       {/* <Filter Menu /> */}
       <FilterMenuButton />
       <div className="flex justify-center">
-        {/* <Loader /> SACAR EL COMENTARIO*/}
+
+        <Loader />
+        <PopUpModal /> 
+
       </div>
       {/* Cards Display Section */}
       <Card />

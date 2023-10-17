@@ -3,12 +3,12 @@ const FooterButton = () => {
     <div>
       <div>
         <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
-          Acerca de
+          ACERCA DE
         </button>
       </div>
       <div>
         <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
-          Reservas
+          RESERVAS
         </button>
       </div>
       <div>
@@ -23,7 +23,7 @@ const FooterButton = () => {
       </div>
       <div>
         <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
-          Contacto
+          CONTACTO
         </button>
       </div>
       <style jsx>{`
