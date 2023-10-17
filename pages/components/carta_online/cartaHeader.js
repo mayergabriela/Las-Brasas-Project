@@ -1,14 +1,12 @@
-import Link from "next/link";
 import CartaCard from "./cartaCardImage";
 import bebidas from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (5).png";
 import menuInfantil from "public/images/carta-online/minihamburguesa-con-tomatitos 1.png";
 import acompañamiento from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (2).png";
 import postres from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (3).png";
 import cafeteria from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (4).png";
-
 import menuPrincipal from "public/images/carta-online/minihamburguesa-con-tomatitos 1 (1).png";
 
-export default function CartaHeader({ imageLocal, title, description }) {
+export default function CartaHeader({ description }) {
   return (
     <section>
       <div className="flex flex-wrap justify-center px-4 py-2 mt-20 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow hover:bg-gray-100">
