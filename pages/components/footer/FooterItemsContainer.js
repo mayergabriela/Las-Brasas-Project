@@ -1,3 +1,4 @@
+/*****  COMPONENTS  *****/
 import FooterItem from "./FooterItem";
 import FooterButton from "./FooterButton";
 import FooterImage from "./FooterImage";
@@ -12,7 +13,7 @@ const FooterItemsContainer = () => {
         <FooterItem />
         <FooterButton />
       </div>
-      <div className="pt-8 pb-8 text-sm text-center bottom-color-footer w-auto">
+      <div className="w-auto pt-8 pb-8 text-sm text-center bottom-color-footer">
         <p>2023 Las Brasas Cook ⓒ | All Rights Reserved </p>
       </div>
     </section>

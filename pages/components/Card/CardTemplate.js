@@ -1,3 +1,4 @@
+/***** REACT COMPONENTS  *****/
 import React from "react";
 /***** COMPONENTS  *****/
 import CardButton from "./CardButton";
@@ -18,6 +19,18 @@ export const CardTemplate = ({ product }) => {
         <CardButton />
         <CardButtonAdd />
       </div>
+      <style jsx>
+        {`
+          img {
+            height: 280px;
+            width: 450.67px;
+            object-fit: cover;
+            border-radius: 15px;
+          }
+        `}
+      </style>
     </div>
   );
 };
+
+export default CardTemplate;

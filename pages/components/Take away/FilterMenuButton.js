@@ -1,3 +1,4 @@
+/***** REACT COMPONENTS  *****/
 import React from "react";
 
 export const FilterMenuButton = () => {
@@ -47,3 +48,5 @@ export const FilterMenuButton = () => {
     </div>
   );
 };
+
+export default FilterMenuButton;

@@ -24,7 +24,7 @@ function Card() {
     /* USE STATE */
   }
   const [product, setProduct] = useState(initial);
-  console.log(product.cafeteria);
+  console.log(product);
   {
     /* USE EFFECT */
   }
@@ -35,7 +35,7 @@ function Card() {
       fetch(`${API}/db`)
         .then((response) => response.json())
         .then((data) => {
-          //console.log(data);
+          //console.log(data.image);
           setProduct(data);
         });
     } catch (error) {

@@ -1,7 +1,10 @@
+/***** REACT COMPONENTS  *****/
 import React from "react";
+/***** COMPONENTS  *****/
 import Card from "./components/Card/Card";
 import Loader from "./components/Take away/Loader";
 import { FilterMenuButton } from "./components/Take away/FilterMenuButton";
+import PopUpModal from "./components/Modal/PopUpModal";
 
 const CartaTakeAway = () => {
   return (
@@ -11,10 +14,12 @@ const CartaTakeAway = () => {
       </div>
       {/* <Filter Menu /> */}
       <FilterMenuButton />
+      <div className="flex justify-center">
+        <Loader />
+      </div>
       {/* Cards Display Section */}
       <Card />
       {/* El loader se muestra solo cuando se esta cargando la data */}
-      <Loader />
     </section>
   );
 };

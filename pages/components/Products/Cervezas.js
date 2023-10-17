@@ -1,15 +1,16 @@
+/***** COMPONENTS  *****/
 import CardButton from "../Card/CardButton";
 import CardButtonAdd from "../Card/CardButtonAdd";
 
 function Cervezas({ cerveza }) {
   return (
-    <div className="flex items-center justify-center my-28 md: w-80 h-auto">
+    <div className="flex items-center justify-center h-auto my-28 md: w-80">
       <div className="flex flex-col p-5 h-100">
         <div className="overflow-hidden rounded-xl">
           <img
             className="object-contain center"
-            src={ cerveza.image }
-            alt={ cerveza.name }
+            src={cerveza.image}
+            alt={cerveza.name}
           ></img>
         </div>
         <h5 className="mt-3 text-2xl font-medium md:text-3xl">
@@ -22,7 +23,7 @@ function Cervezas({ cerveza }) {
         <CardButtonAdd />
       </div>
     </div>
-  )
+  );
 }
 
-export default Cervezas
+export default Cervezas;
