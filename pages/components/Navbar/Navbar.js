@@ -47,9 +47,6 @@ function Navbar() {
         </Link>
         <div>
           <ul className="hidden gap-10 tracking-wider text-white lg:flex opacity">
-            <Link href={"/acercaDe"}>
-              <li className="opacity-90 hover:opacity-50">ACERCA DE</li>
-            </Link>
             <Link href={"/reservas"}>
               <li className="opacity-90 hover:opacity-50">RESERVAS</li>
             </Link>
@@ -125,11 +122,6 @@ function Navbar() {
           </div>
           <div className="flex flex-col py-8 ">
             <ul className="py-4 uppercase">
-              <Link href={"/acercaDe"}>
-                <li className="py-4 text-white text-mg opacity-90 hover:opacity-50">
-                  ACERCA DE
-                </li>
-              </Link>
               <Link href={"/reservas"}>
                 <li className="py-4 text-white text-mg opacity-90 hover:opacity-50">
                   RESERVAS
@@ -145,7 +137,7 @@ function Navbar() {
                   CARTA TAKE AWAY
                 </li>
               </Link>
-              <Link href={"/contacto"}>
+              <Link href={"/contact"}>
                 <li className="py-4 text-white text-mg opacity-90 hover:opacity-50">
                   CONTACTO
                 </li>
