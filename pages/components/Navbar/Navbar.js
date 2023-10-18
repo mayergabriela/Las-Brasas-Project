@@ -63,24 +63,20 @@ function Navbar() {
         </div>
         <div className="items-center justify-between hidden gap-3 px-4 py-1 md:flex opacity-90">
           <div className="flex items-center justify-between w-full gap-6 px-6 my-4">
-  
-            <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
-              <FaShoppingCart fill="white" size={22} />
-            </div>
             <button
-              className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer  hover:opacity-50 hover:scale-105 ease-in duration-300"
+              className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer  hover:opacity-50 hover:scale-105 ease-in duration-300"
               onClick={toggleTheme}
             >
               {theme === "light" ? (
-                <BsFillMoonFill />
+                <BsFillMoonFill size={22} />
               ) : (
-                <BsSunFill fill="black" />
+                <BsSunFill fill="white" size={22} />
               )}
             </button>
 
             <Link href={"/cart"}>
-              <div className="relative rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
-                <FaShoppingCart fill="white" />
+              <div className="relative rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
+                <FaShoppingCart fill="white" size={22} />
                 {totalQuantity > 0 && (
                   <div className="absolute flex items-center justify-center w-5 h-5 text-xs text-white bg-red-500 rounded-full -top-2 -right-3">
                     {totalQuantity}
@@ -88,11 +84,10 @@ function Navbar() {
                 )}
               </div>
             </Link>
-
           </div>
         </div>
         <div onClick={handleNav} className="md:hidden">
-          <AiOutlineMenu fill="white" size={25} />
+          <AiOutlineMenu fill="white" size={22} />
         </div>
       </div>
 
