@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
+
 import { FaCalendar , FaUsers } from 'react-icons/fa'
 import Datetime from 'react-datetime'
 import "react-datetime/css/react-datetime.css"
@@ -14,6 +15,18 @@ function reserva() {
 
   return (
     <div className="w-full mx-auto p-4 lg:py-[25px]">
+
+import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { useContext } from "react";
+
+const Reserva = () => {
+  const data = useContext(ThemeContext);
+
+  const [theme] = data;
+
+  return (
+    <div className={`max-w-[1980px] mx-auto p-4 ${theme}`}>
+
       {" "}
       <div className="h-screen relative">
         {" "}
@@ -100,4 +113,7 @@ function reserva() {
   );
 };
 
-export default reserva
+
+
+export default reserva;
+

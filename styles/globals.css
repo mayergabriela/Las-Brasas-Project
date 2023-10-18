@@ -35,6 +35,18 @@ p {
   }
 }
 
+/************************************** Dark & Light **************************************/
+
+.dark{
+  background-color: #000 ;
+  opacity: 0.7;
+  color: #ffffff ;
+}
+
+.light{
+  background-color: #ffffff;
+  color: #000;
+}
 /************************************** LOADER **************************************/
 .lds-ellipsis {
   display: inline-block;
@@ -95,4 +107,30 @@ p {
 /************************************** FOOTER **************************************/
 .bottom-color-footer {
   background-color: var(--second-color);
+}
+
+
+/************************************** Footer para diseño en desarrollo **************************************/
+
+.footerShowCart {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  text-align: left;
+  background: rgba(0, 0, 0, .7);
+  padding: 8px 24px;
+  border-radius: 32px;
+  opacity: .95;
+  backdrop-filter: blur(8px);
+}
+
+.footerShowCart span {
+  font-size: 14px;
+  color: #09f;
+  opacity: .8;
+}
+
+.footerShowCart h4, .footerShowCart h5 {
+  margin: 0;
+  display: flex;
 }

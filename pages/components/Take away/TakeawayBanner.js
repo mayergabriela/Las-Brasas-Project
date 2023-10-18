@@ -1,14 +1,18 @@
 /** REACT  COMPONENTS  **/
-import React from "react";
 import Image from "next/image";
 /**LIBRARY IMPORTED  **/
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { useContext } from "react";
 
 /** IMAGES IMPORTED  **/
 
 const TakeawayBanner = () => {
+  const data = useContext(ThemeContext);
+
+  const [theme] = data;
   return (
-    <div className="max-w-[1980px] mx-auto p-4">
+    <div className={`max-w-[1980px] mx-auto p-4 ${theme}`}>
       {" "}
       <div className="max-h-[750px] relative">
         {" "}
@@ -22,7 +26,7 @@ const TakeawayBanner = () => {
           </h2>{" "}
           <div className="flex items-center justify-center w-full my-1 sm:w-[80%] lg:p-2 lg:my-2 md:p-1 mt-0">
             {" "}
-            <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] md:m-6 lg:m-4 p-2">
+            <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] md:m-6 lg:m-4 p-2 opacity-90 hover:opacity-50 ">
               <AiOutlineWhatsApp fill="white" size={20} />{" "}
             </div>{" "}
             <p className="p-2 text-xs tracking-wider md:text-xl lg:text-2xl lg:px-2 lg:mx-0">

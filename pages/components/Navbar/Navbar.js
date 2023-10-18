@@ -5,11 +5,30 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { BiSolidUser } from "react-icons/bi";
 import { FaShoppingCart } from "react-icons/fa";
+import { BsSunFill } from "react-icons/bs";
+import { BsFillMoonFill } from "react-icons/bs";
+
+import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { useContext } from "react";
+
 /***** IMAGE IMPORTED  *****/
 import Image from "next/image";
+import { useCart } from "@/pages/hooks/useCart";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+
+  const { cart } = useCart();
+
+  const data = useContext(ThemeContext);
+
+  const [theme, toggleTheme] = data;
+
+  // Calcular la cantidad total de productos en el carrito
+  const totalQuantity = cart.reduce(
+    (total, product) => total + product.quantity,
+    0
+  );
 
   const handleNav = () => {
     setNav(!nav);
@@ -28,9 +47,6 @@ function Navbar() {
         </Link>
         <div>
           <ul className="hidden gap-10 tracking-wider text-white lg:flex opacity">
-            <Link href={"/acercaDe"}>
-              <li className="opacity-90 hover:opacity-50">ACERCA DE</li>
-            </Link>
             <Link href={"/reservas"}>
               <li className="opacity-90 hover:opacity-50">RESERVAS</li>
             </Link>
@@ -47,15 +63,32 @@ function Navbar() {
         </div>
         <div className="items-center justify-between hidden gap-3 px-4 py-1 md:flex opacity-90">
           <div className="flex items-center justify-between w-full gap-6 px-6 my-4">
-            <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10]  p-3 cursor-pointer  hover:opacity-50 hover:scale-105 ease-in duration-300">
-              <AiOutlineSearch fill="white" size={22} />
-            </div>
-            <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
-              <BiSolidUser fill="white" size={22} />
-            </div>
+  
             <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
               <FaShoppingCart fill="white" size={22} />
             </div>
+            <button
+              className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer  hover:opacity-50 hover:scale-105 ease-in duration-300"
+              onClick={toggleTheme}
+            >
+              {theme === "light" ? (
+                <BsFillMoonFill />
+              ) : (
+                <BsSunFill fill="black" />
+              )}
+            </button>
+
+            <Link href={"/cart"}>
+              <div className="relative rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
+                <FaShoppingCart fill="white" />
+                {totalQuantity > 0 && (
+                  <div className="absolute flex items-center justify-center w-5 h-5 text-xs text-white bg-red-500 rounded-full -top-2 -right-3">
+                    {totalQuantity}
+                  </div>
+                )}
+              </div>
+            </Link>
+
           </div>
         </div>
         <div onClick={handleNav} className="md:hidden">
@@ -94,11 +127,6 @@ function Navbar() {
           </div>
           <div className="flex flex-col py-8 ">
             <ul className="py-4 uppercase">
-              <Link href={"/acercaDe"}>
-                <li className="py-4 text-white text-mg opacity-90 hover:opacity-50">
-                  ACERCA DE
-                </li>
-              </Link>
               <Link href={"/reservas"}>
                 <li className="py-4 text-white text-mg opacity-90 hover:opacity-50">
                   RESERVAS
@@ -114,7 +142,7 @@ function Navbar() {
                   CARTA TAKE AWAY
                 </li>
               </Link>
-              <Link href={"/contacto"}>
+              <Link href={"/contact"}>
                 <li className="py-4 text-white text-mg opacity-90 hover:opacity-50">
                   CONTACTO
                 </li>

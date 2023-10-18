@@ -4,12 +4,12 @@ import imageAbout2 from "/public/images/aboutImage/img 2.png";
 import imageAbout1 from "/public/images/aboutImage/img 1.png";
 import imageAbout3 from "/public/images/aboutImage/img 3.png";
 /*****  COMPONENTS  *****/
-import AboutDueño from "./aboutDueño";
-import Reserva from "./reserva";
+import AboutDueño from "./AboutDueño";
+
 
 export default function About() {
   return (
-    <>
+    <div>
       <section className="flex-row-reverse justify-center gap-6 md:flex">
         <article className="md:grid place-content-start">
           <div className="grid my-5 place-items-center md:px-3">
@@ -57,7 +57,6 @@ export default function About() {
         </article>
       </section>
       <AboutDueño></AboutDueño>
-      <Reserva></Reserva>
-    </>
+    </div>
   );
 }

@@ -9,7 +9,7 @@ import { Pagination } from "swiper/modules";
 
 const Carousel = () => {
   return (
-    <div className="w-5/6 h-full mx-auto my-32 border-none ">
+    <div className="w-5/6 h-full mx-auto my-32 border-none">
       <div className="p-8 mx-auto my-16">
         <h1 className="text-3xl font-medium text-center uppercase md:text-4xl lg:text-6xl my-14 ">
           <span className="inline-block border-b-2 border-yellow-500">
