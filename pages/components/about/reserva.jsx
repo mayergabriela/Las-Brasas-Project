@@ -1,6 +1,8 @@
 /** REACT COMPONENTS  **/
 import React, { useState } from "react";
 import Image from "next/image";
+import { AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
+import { IoLocationSharp } from "react-icons/io5";
 import { FaCalendar , FaUsers } from 'react-icons/fa'
 import Datetime from 'react-datetime'
 import "react-datetime/css/react-datetime.css"
@@ -23,6 +25,35 @@ function reserva() {
           {" "}
           <div className="flex flex-col items-center w-full my-4 sm:w-[80%] m-1 lg:p-3 lg:my-6">
             {" "}
+            <div className='flex flex-col lg:flex-row gap-y-2 lg:gap-x-[30px] items-center justify-between mb-8 pb-8 lg:mb-14'>
+              <div className="flex items-center justify-center w-full my-4 sm:w-[80%] lg:p-2 lg:my-4 ">
+                {" "}
+                <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] sm:m-4 lg:m-5 p-2 ">
+                  <IoLocationSharp fill="white" size={20} />{" "}
+                </div>{" "}
+                <p className="p-2 tracking-wider whitespace-nowrap text-xl lg:text-2xl lg:px-2 lg:m-2">
+                  Rodríguez Peña 684, CABA
+                </p>{" "}
+              </div>{" "}
+              <div className="flex items-center justify-center w-full lg:mx-14 my-4 sm:w-[80%] lg:p-2 lg:my-4 md:bottom-1 ">
+              {" "}
+                <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] sm:m-4 lg:m-4 p-2">
+                  <AiOutlineWhatsApp fill="white" size={20} />{" "}
+                </div>{" "}
+                <p className="p-2 text-xl lg:text-2xl lg:px-2 lg:mx-0">
+                  +54 1154253329
+                </p>{" "}
+              </div>{" "}
+              <div className="flex items-center justify-center w-full my-4 sm:w-[80%] lg:p-2 lg:my-4 md:bottom-1 ">
+              {" "}
+                <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] sm:m-4 lg:m-4 p-2">
+                  <AiOutlineMail fill="white" size={20} />{" "}
+                </div>{" "}
+                <p className="p-2 text-xl lg:text-2xl lg:px-2 lg:mx-0">
+                  info@lasbrasascook.com
+                </p>{" "}
+              </div>{" "}
+            </div>
 
             <form>
                 <div className='flex flex-col lg:flex-row gap-y-10 lg:gap-x-[30px] items-center justify-between mb-8'>
@@ -37,6 +68,9 @@ function reserva() {
                           input={true}
                           selected={startDate} 
                           onChange={(date)=> setStartDate(date)}
+                          dateFormat={true}
+                          initialValue={new Date()}
+                          
                         /> 
                     </div>
                     {/*person number */}
