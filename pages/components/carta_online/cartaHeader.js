@@ -14,7 +14,7 @@ export default function CartaHeader({ description }) {
       </div>
       <article className="grid grid-cols-3 grid-rows-2 gap-5">
         <div className="max-w-sm col-span-1 row-span-2 overflow-hidden rounded shadow-lg">
-          <CartaCard imageLocal={menuPrincipal} title={"menu principal"} />
+          <CartaCard imageLocal={menuPrincipal} title={"Menu Principal"} />
           <span className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-black bg-yellow-500 rounded-full">
             {(description = "Carnes")}
           </span>
@@ -26,7 +26,7 @@ export default function CartaHeader({ description }) {
           </span>
         </div>
         <div className="max-w-sm col-span-1 row-span-2 overflow-hidden rounded shadow-lg">
-          <CartaCard imageLocal={menuInfantil} title={"menu infantil"} />
+          <CartaCard imageLocal={menuInfantil} title={"Menu Infantil"} />
           <span className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-black bg-yellow-500 rounded-full">
             {(description = "Mini hamburguesas")}
           </span>
@@ -38,7 +38,7 @@ export default function CartaHeader({ description }) {
           </span>
         </div>
         <div className="max-w-sm col-span-1 row-span-2 overflow-hidden rounded shadow-lg">
-          <CartaCard imageLocal={acompañamiento} title={"acompañamiento"} />
+          <CartaCard imageLocal={acompañamiento} title={"Acompañamiento"} />
           <span className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-black bg-yellow-500 rounded-full">
             {(description = "Vegetales")}
           </span>
@@ -50,7 +50,7 @@ export default function CartaHeader({ description }) {
           </span>
         </div>
         <div className="max-w-sm col-span-1 row-span-2 overflow-hidden rounded shadow-lg">
-          <CartaCard imageLocal={bebidas} title={"bebidas"} />
+          <CartaCard imageLocal={bebidas} title={"Bebidas"} />
           <span className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-black bg-yellow-500 rounded-full">
             {(description = "Wizky")}
           </span>
@@ -62,7 +62,7 @@ export default function CartaHeader({ description }) {
           </span>
         </div>
         <div className="max-w-sm col-span-1 row-span-2 overflow-hidden rounded shadow-lg">
-          <CartaCard imageLocal={cafeteria} title={"cafeteria"} />
+          <CartaCard imageLocal={cafeteria} title={"Cafeteria"} />
           <span className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-black bg-yellow-500 rounded-full">
             {(description = "Variedades de te'")}
           </span>
@@ -74,7 +74,7 @@ export default function CartaHeader({ description }) {
           </span>
         </div>
         <div className="max-w-sm col-span-1 row-span-2 overflow-hidden rounded shadow-lg">
-          <CartaCard imageLocal={postres} title={"postres"} />
+          <CartaCard imageLocal={postres} title={"Postres"} />
           <span className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-black bg-yellow-500 rounded-full">
             {(description = "Tortas")}
           </span>
@@ -82,7 +82,7 @@ export default function CartaHeader({ description }) {
             {(description = "Helados")}
           </span>
           <span className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-black bg-yellow-500 rounded-full">
-            {(description = "Artezanal")}
+            {(description = "Artesanal")}
           </span>
         </div>
       </article>

@@ -3,6 +3,7 @@ import React from "react";
 /***** COMPONENTS  *****/
 import CardButton from "./CardButton";
 import CardButtonAdd from "./CardButtonAdd";
+import PopUpModal from "../Modal/PopUpModal";
 
 export const CardTemplate = ({ product }) => {
   return (
@@ -16,7 +17,7 @@ export const CardTemplate = ({ product }) => {
         </h5>
         <p className="mt-3 text-lg text- text-slate-500">{product.price}</p>
         {product.description}
-        <CardButton />
+        <PopUpModal />
         <CardButtonAdd product={product} />
       </div>
       <style jsx>
