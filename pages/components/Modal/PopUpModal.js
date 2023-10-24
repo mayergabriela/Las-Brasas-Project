@@ -11,11 +11,11 @@ export default function PopUpModal() {
   return (
     <>
       <Button
-        color="warningn"
-        className="mt-4 text-lg font-bold text-center text-white duration-300 ease-out bg-yellow-500 hover:bg-black hover:text-yellow-500"
+        color="mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg focus:scale-95 footerButton"
+        className="mt-4 text-lg font-bold text-center text-white duration-300 ease-out bg-yellow-500 rounded-lg hover:bg-black hover:text-yellow-500 focus:scale-95 footerButton"
         onClick={() => props.setOpenModal("pop-up")}
       >
-        ACEPTAR
+        COMPRAR AHORA
       </Button>
       <Modal
         show={props.openModal === "pop-up"}
@@ -46,6 +46,18 @@ export default function PopUpModal() {
           </div>
         </Modal.Body>
       </Modal>
+      <style jsx>{`
+        button {
+          background-color: var(--first-color);
+          text-transform: uppercase;
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #2c2c2c;
+          color: var(--first-color);
+        }
+      `}</style>
     </>
   );
 }
