@@ -9,7 +9,7 @@ import menuPrincipal from "public/images/carta-online/minihamburguesa-con-tomati
 export default function CartaHeader({ description }) {
   return (
     <section className="grid place-content-center">
-      <div className="flex flex-wrap justify-center px-4 py-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow mt-28 hover:bg-gray-100">
+      <div className="flex flex-wrap justify-center px-4 py-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow mt-32 hover:bg-gray-100">
         <h1>CARTA ONLINE</h1>
       </div>
       <article className="grid grid-cols-3 grid-rows-2 gap-5">

@@ -14,7 +14,7 @@ const CartItem = () => {
   const [theme] = data;
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto min-h-full overflow-hidden">
       {isCartEmpty ? (
         <div className="flex flex-col items-center justify-center w-full h-screen">
           <p className="w-1/2 text-5xl text-center text-gray-300 bg-black/75">
@@ -22,8 +22,8 @@ const CartItem = () => {
           </p>
         </div>
       ) : (
-        <div className="h-screen">
-          <table className="w-full my-8 text-sm text-center text-gray-500 dark:text-gray-400">
+        <div className="min-h-screen">
+          <table className="w-full my-8 text-sm text-center text-gray-500 dark:text-gray-400 min-h-screen">
             <thead
               className={`text-xl text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ${theme}`}
             >
