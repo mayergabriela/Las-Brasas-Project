@@ -144,16 +144,27 @@ function Navbar() {
               </Link>
             </ul>
             <div className="mt-20 p-30">
-              <div className="flex items-center justify-between my-6 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineSearch fill="white" size={20} />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BiSolidUser fill="white" size={20} />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaShoppingCart fill="white" size={20} />
-                </div>
+              <div className="flex items-center justify-between mx-8 px-8 py-1 md:flex opacity-90 my-6 w-full sm:w-[80%]">
+                <Link href={"/cart"}>
+                  <div className="relative rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer hover:opacity-50 hover:scale-105 ease-in duration-300">
+                    <FaShoppingCart fill="white" size={22} />
+                    {totalQuantity > 0 && (
+                      <div className="absolute flex items-center justify-center w-5 h-5 text-xs text-white bg-red-500 rounded-full -top-2 -right-3">
+                        {totalQuantity}
+                      </div>
+                    )}
+                  </div>
+                </Link>
+                <button
+                  className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-3 cursor-pointer  hover:opacity-50 hover:scale-105 ease-in duration-300"
+                  onClick={toggleTheme}
+                >
+                  {theme === "light" ? (
+                    <BsFillMoonFill size={22} />
+                  ) : (
+                    <BsSunFill fill="white" size={22} />
+                  )}
+                </button>
               </div>
             </div>
           </div>
