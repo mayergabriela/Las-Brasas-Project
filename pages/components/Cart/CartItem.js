@@ -25,27 +25,27 @@ const CartItem = () => {
         <div className="h-screen">
           <table className="w-full my-8 text-sm text-center text-gray-500 dark:text-gray-400">
             <thead
-              className={`text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ${theme}`}
+              className={`text-xl text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ${theme}`}
             >
               <tr>
                 <th></th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-6 py-3 text-xl">
                   Producto
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-6 py-3 text-xl">
                   Nombre
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-6 py-3 text-xl">
                   Cantidad
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-6 py-3 text-xl">
                   Precio
                 </th>
               </tr>
             </thead>
             {cart.map((product) => (
               <tbody key={product.id}>
-                <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <tr className="text-xl bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                   <th className={theme}>
                     <button onClick={() => removeFromCart(product)}>
                       <AiFillCloseCircle fill="red" size={25} />
@@ -53,7 +53,7 @@ const CartItem = () => {
                   </th>
                   <th
                     scope="row"
-                    className={`px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white ${theme}`}
+                    className={`px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white  ${theme}`}
                   >
                     <Image
                       src={product.image}
@@ -86,7 +86,7 @@ const CartItem = () => {
                 <td></td>
                 <td>
                   <button
-                    className="h-10 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg w-28 opacity-70"
+                    className="h-10 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg w-28 opacity-70 "
                     style={{ backgroundColor: "red" }}
                     onClick={() => clearCart()}
                   >
