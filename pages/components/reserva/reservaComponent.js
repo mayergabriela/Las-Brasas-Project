@@ -1,14 +1,12 @@
 /** REACT COMPONENTS  **/
-import React, { useState } from "react";
+import { useState,useContext  } from "react";
 import Image from "next/image";
 import { AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaCalendar, FaUsers } from "react-icons/fa";
 import Datetime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
-
 import { ThemeContext } from "@/pages/context/ThemeContextProvider";
-import { useContext } from "react";
 
 const Reserva = () => {
   const [startDate, setStartDate] = useState(new Date());

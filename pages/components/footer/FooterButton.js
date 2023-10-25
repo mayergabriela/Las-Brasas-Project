@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const FooterButton = () => {
   return (
     <div>
@@ -16,25 +18,23 @@ const FooterButton = () => {
         </a>
       </div>
       <div>
-        <a href="/cartaOnline">
+        <Link href="/cartaOnline"/>
           <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48 ">
             CARTA ONLINE
           </button>
-        </a>
+    
       </div>
       <div>
-        <a href="/cartaTakeAway">
+        <Link href="/cartaTakeAway"/>
           <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
             CARTA TAKE AWAY
           </button>
-        </a>
       </div>
       <div>
-        <a href="/contact">
+        <Link href="/contact"/>
           <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
             CONTACTO
           </button>
-        </a>
       </div>
       <style jsx>{`
         .footerButton {
