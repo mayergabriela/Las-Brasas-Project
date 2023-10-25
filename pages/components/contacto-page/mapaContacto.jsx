@@ -12,7 +12,7 @@ export default function MapaContacto() {
           <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2">
             <IoLocationSharp fill="white" size={25} />
           </div>
-          <p className="grid text-gray-50 text-md place-content-center ">
+          <p className="grid text-gray-50 text-xl place-content-center ">
             Rodríguez Peña 684, CABA
           </p>
         </div>
@@ -20,7 +20,7 @@ export default function MapaContacto() {
           <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2">
             <AiOutlineWhatsApp fill="white" size={25} />
           </div>
-          <p className="grid content-center text-gray-50 text-md">
+          <p className="grid content-center text-gray-50 text-xl">
             +54116509428
           </p>
         </div>
@@ -28,7 +28,7 @@ export default function MapaContacto() {
           <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] p-2">
             <AiOutlineMail fill="white" size={25} />
           </div>
-          <p className="grid text-gray-50 text-ellipsis text-md place-content-center">
+          <p className="grid text-gray-50 text-ellipsis text-xl place-content-center">
             info@lasbrasascook.com
           </p>
         </div>
