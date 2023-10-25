@@ -32,7 +32,7 @@ function Card() {
     setTimeout(() =>{
       setLoading(false)
 
-    },5000)
+    },7000)
 
   },[])
   {
