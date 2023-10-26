@@ -50,7 +50,7 @@ const Carousel = () => {
           <SwiperSlide>
             <Image
               src="/images/Brochette-Lomo.png"
-              alt="img"
+              alt="Brochette de Lomo"
               width={800}
               height={540}
             />
@@ -97,10 +97,10 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src="/images/morrones-asados.jpg"
+              src="/images/Sandwich-de-Pollo.jpg"
               width={800}
               height={540}
-              alt="Morrones asados"
+              alt="Sandwich de Pollo"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -113,19 +113,26 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src="/images/brownie_helado.png"
+              src="/images/pure-calabaza.jpg"
               width={800}
               height={540}
-              alt="Brownie helado"
+              alt="Puré de Calabaza"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src="/images/papa-a-la-provenzal.jpg"
+              src="/images/fideos-tuco.jpg"
               width={800}
               height={540}
-              alt="Papas a la provenzal"
+              alt="Fideos con tuco"
             />
+            <style jsx>{`
+            Image {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            `}</style>
           </SwiperSlide>
         </Swiper>
       </div>

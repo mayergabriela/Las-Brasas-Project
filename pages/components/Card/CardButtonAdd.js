@@ -6,7 +6,7 @@ const CardButtonAdd = ({ product }) => {
   return (
     <>
       <button
-        className="mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg opacity-70 footerButton"
+        className="p-2 mt-4 font-semibold text-center text-white duration-300 ease-out rounded-lg footerButton"
         onClick={() => addToCart(product)}
       >
         Agregar al carrito

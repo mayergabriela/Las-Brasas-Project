@@ -28,12 +28,12 @@ const Reserva = () => {
           <div className="flex flex-col items-center w-full my-4 sm:w-[80%] m-1 lg:p-3 lg:my-6">
             {" "}
             <div className="flex flex-col lg:flex-row gap-y-2 lg:gap-x-[30px] items-center justify-between mb-8 pb-8 lg:mb-14">
-              <div className="flex items-center justify-center w-full my-4 sm:w-[80%] lg:p-2 lg:my-4 ">
+              <div className="flex items-center justify-center w-full my-4 lg:mx-14 sm:w-[80%] lg:p-2 lg:my-4 ">
                 {" "}
-                <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] sm:m-4 lg:m-5 p-2 ">
+                <div className="rounded-full shadow-md shadow-gray-600 bg-[#EBAA10] sm:m-4 lg:m-4 p-2">
                   <IoLocationSharp fill="white" size={20} />{" "}
                 </div>{" "}
-                <p className="p-2 text-xl tracking-wider whitespace-nowrap lg:text-2xl lg:px-2 lg:m-2">
+                <p className="p-2 text-xl whitespace-nowrap lg:text-2xl lg:px-2 lg:mx-0">
                   Rodríguez Peña 684, CABA
                 </p>{" "}
               </div>{" "}
@@ -65,7 +65,7 @@ const Reserva = () => {
                     <div>Seleccionar Fecha y Horario</div>
                   </div>
                   <Datetime
-                    className="relative py-2 mx-8 text-sm text-center text-gray-500 bg-white border-2 border-gray-300 rounded-lg shadow appearance-none input w-60"
+                    className="w-60 py-2 mx-8 text-sm text-center text-gray-500 bg-white border-2 border-gray-300 rounded-lg shadow appearance-none input"
                     input={true}
                     selected={startDate}
                     onChange={(date) => setStartDate(date)}

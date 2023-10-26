@@ -2,29 +2,39 @@ const FooterButton = () => {
   return (
     <div>
       <div>
-        <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
-          ACERCA DE
-        </button>
+        <a href="/acercaDe">
+          <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
+            ACERCA DE
+          </button>
+        </a>
       </div>
       <div>
-        <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
-          RESERVAS
-        </button>
+        <a href="/reservas">
+          <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
+            RESERVAS
+          </button>
+        </a>
       </div>
       <div>
-        <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48 ">
-          CARTA ONLINE
-        </button>
+        <a href="/cartaOnline">
+          <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48 ">
+            CARTA ONLINE
+          </button>
+        </a>
       </div>
       <div>
-        <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
-          CARTA TAKE AWAY
-        </button>
+        <a href="/cartaTakeAway">
+          <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
+            CARTA TAKE AWAY
+          </button>
+        </a>
       </div>
       <div>
-        <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
-          CONTACTO
-        </button>
+        <a href="/contact">
+          <button className="my-3 px-5 duration-300 footerButton hover:bg-yellow-500 py-2.5 h-10 w-48">
+            CONTACTO
+          </button>
+        </a>
       </div>
       <style jsx>{`
         .footerButton {

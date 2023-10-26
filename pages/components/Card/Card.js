@@ -1,6 +1,7 @@
 "use client";
 /***** REACT FEATURES  *****/
 import { useState, useEffect } from "react";
+import BeatLoader from "react-spinners/BeatLoader";
 /***** COMPONENTS  *****/
 import { CardTemplate } from "./CardTemplate";
 /***** API FEATURES  *****/
@@ -25,6 +26,15 @@ function Card() {
   }
   const [product, setProduct] = useState(initial);
   //console.log(product);
+  const [loading, setLoading] = useState(false);
+  useEffect(() =>{
+    setLoading(true)
+    setTimeout(() =>{
+      setLoading(false)
+
+    },7000)
+
+  },[])
   {
     /* USE EFFECT */
   }
@@ -47,7 +57,17 @@ function Card() {
 
   return (
     <div>
-     
+      {
+        loading?
+        <BeatLoader
+        color={'#EBAA10'}
+        loading={loading}
+        size={30}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+      :
+      <div>
         <h2
           className="p-2 my-20 text-4xl font-bold text-center text-yellow-500"
           id="Menu_principal"
@@ -134,6 +154,8 @@ function Card() {
             ))}
         </div>
       </div>
+      </div>
+      }
     </div>
   );
 }
