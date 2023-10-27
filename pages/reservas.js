@@ -1,7 +1,7 @@
 import React from "react";
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import Reserva from "../components/reservaComponent/reserva";
+import { ThemeContext } from "../context/ThemeContextProvider";
 import { useContext } from "react";
-import Reserva from "./components/reserva/reservaComponent";
 const reservas = () => {
   const data = useContext(ThemeContext);
 

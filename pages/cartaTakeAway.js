@@ -1,11 +1,11 @@
 /***** REACT COMPONENTS  *****/
 import React from "react";
 /***** COMPONENTS  *****/
-import Card from "./components/Card/Card";
-import Loader from "./components/Take away/Loader";
-import { FilterMenuButton } from "./components/Take away/FilterMenuButton";
-import PopUpModal from "./components/Modal/PopUpModal";
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import Card from "../components/Card/Card";
+// import Loader from "../components/Take away/Loader";
+import { FilterMenuButton } from "../components/Take-away/FilterMenuButton";
+// import PopUpModal from "../components/Modal/PopUpModal";
+import { ThemeContext } from "../context/ThemeContextProvider";
 import { useContext } from "react";
 
 const CartaTakeAway = () => {

@@ -1,4 +1,4 @@
-import { useCart } from "@/pages/hooks/useCart";
+import { useCart } from "../../hooks/useCart";
 
 const CardButtonAdd = ({ product }) => {
   const { addToCart } = useCart();

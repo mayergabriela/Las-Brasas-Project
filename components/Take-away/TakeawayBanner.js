@@ -2,7 +2,7 @@
 import Image from "next/image";
 /**LIBRARY IMPORTED  **/
 import { AiOutlineWhatsApp } from "react-icons/ai";
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { useContext } from "react";
 
 /** IMAGES IMPORTED  **/
