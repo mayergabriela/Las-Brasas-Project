@@ -2,9 +2,13 @@ import React from "react";
 import Reserva from "../components/reservaComponent/reserva";
 import { ThemeContext } from "../context/ThemeContextProvider";
 import { useContext } from "react";
+<<<<<<< HEAD
 const reservas = () => {
-  const data = useContext(ThemeContext);
+=======
 
+const Reservas = () => {
+>>>>>>> dev
+  const data = useContext(ThemeContext);
   const [theme] = data;
 
   return (
@@ -17,4 +21,4 @@ const reservas = () => {
   );
 };
 
-export default reservas;
+export default Reservas;
