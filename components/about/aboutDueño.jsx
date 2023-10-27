@@ -3,7 +3,7 @@ import Image from "next/image";
 /***** IMAGES IMPORTED  *****/
 import imageDueño2 from "public/images/aboutImage/Christian-img.png";
 import imageDueño1 from "public/images/aboutImage/Chris_P_img.png";
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { useContext } from "react";
 
 export default function AboutDueño() {

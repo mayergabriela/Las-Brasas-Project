@@ -1,8 +1,8 @@
-import { useCart } from "@/pages/hooks/useCart";
+import { useCart } from "../../hooks/useCart";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { MdOutlineAddBox } from "react-icons/md";
 import Image from "next/image";
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { useContext } from "react";
 
 const CartItem = () => {

@@ -1,8 +1,8 @@
 /***** COMPONENTS  *****/
-import Hero from "./components/Hero/Hero";
-import Carousel from "./components/Carousel/Carousel";
-import TakeawayBanner from "./components/Take away/TakeawayBanner";
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import Hero from "../components/Hero/Hero";
+import Carousel from "../components/Carousel/Carousel";
+import TakeawayBanner from "../components/Take-away/TakeawayBanner";
+import { ThemeContext } from "../context/ThemeContextProvider";
 import { useContext } from "react";
 
 export default function Home() {

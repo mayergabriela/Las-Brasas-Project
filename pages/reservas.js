@@ -1,6 +1,6 @@
 import React from "react";
-import Reserva from "./components/about/Reserva";
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import Reserva from "../components/reservaComponent/reserva";
+import { ThemeContext } from "../context/ThemeContextProvider";
 import { useContext } from "react";
 
 const reservas = () => {

@@ -1,7 +1,6 @@
 /***** REACT COMPONENTS  *****/
 import React from "react";
 /***** COMPONENTS  *****/
-import CardButton from "./CardButton";
 import CardButtonAdd from "./CardButtonAdd";
 import PopUpModal from "../Modal/PopUpModal";
 

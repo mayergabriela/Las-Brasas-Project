@@ -8,12 +8,12 @@ import { FaShoppingCart } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";
 import { BsFillMoonFill } from "react-icons/bs";
 
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { useContext } from "react";
 
 /***** IMAGE IMPORTED  *****/
 import Image from "next/image";
-import { useCart } from "@/pages/hooks/useCart";
+import { useCart } from "../../hooks/useCart";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
