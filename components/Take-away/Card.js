@@ -93,10 +93,10 @@ function Card() {
               </div>
               <div className="grid place-items-center">
                 <p className="font-bold text-xl mb-2 p-2">{product.name}</p>
-                <p>{product.description}</p>
+                <p className="p-1 text-black">{product.description}</p>
               </div>
                 <div className=" relative left-24 rounded-lg bg-slate-200">
-                  <p className="px-6 pt-4 pb-2">${product.price}</p>
+                  <p className="px-6 pt-4 pb-2 text-slate-950">${product.price}</p>
                 </div>
               <div className="flex">
                 <CardButton />
