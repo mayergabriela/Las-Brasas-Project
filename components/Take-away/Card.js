@@ -75,18 +75,19 @@ function Card() {
         </article>
       </section>
       <section className="grid place-content-center">
-        <article className="flex flex-wrap gap-4 m-10 ">
+        <article className="flex justify-center flex-wrap gap-9 p-1">
           {data.map((product) => (
             <div
-              className="flex flex-col justify-between items-center w-96 h-96 m-2 rounded-lg bg-slate-50 shadow-lg"
+              className="flex container flex-col justify-between items-center w-[300px] rounded-lg bg-slate-50 shadow-lg"
               key={product.id}
             >
-              <div className="grid place-content-center container">
+              <div className="grid place-content-center">
                 <Image
                   src={product.image}
                   alt={product.name}
-                  height={250}
-                  width={150}
+                  height={200}
+                  width={200}
+                  layout="responsive"
                   className="rounded-lg"
                 />
               </div>
@@ -94,7 +95,7 @@ function Card() {
                 <p className="font-bold text-xl mb-2 p-2">{product.name}</p>
                 <p>{product.description}</p>
               </div>
-                <div className="relative left-24 rounded-lg bg-slate-200">
+                <div className=" relative left-24 rounded-lg bg-slate-200">
                   <p className="px-6 pt-4 pb-2">${product.price}</p>
                 </div>
               <div className="flex">

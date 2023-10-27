@@ -2,14 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    /**remotePatterns:[
+    remotePatterns:[
       {
         protocol: 'https',
         hostname: 'console.cloudinary.com',
         port: '',
         pathname: '/console/**'
       }
-    ] **/
+    ],
     domains: ["res.cloudinary.com"],
   },
 };
