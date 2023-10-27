@@ -3,9 +3,8 @@ import Reserva from "../components/reservaComponent/reserva";
 import { ThemeContext } from "../context/ThemeContextProvider";
 import { useContext } from "react";
 
-const reservas = () => {
+const Reservas = () => {
   const data = useContext(ThemeContext);
-
   const [theme] = data;
 
   return (
@@ -18,4 +17,4 @@ const reservas = () => {
   );
 };
 
-export default reservas;
+export default Reservas;

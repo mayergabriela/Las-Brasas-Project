@@ -4,7 +4,7 @@ import About from "../components/about/about";
 import { ThemeContext } from "../context/ThemeContextProvider";
 import { useContext } from "react";
 
-const acercaDe = () => {
+const AcercaDe = () => {
   const data = useContext(ThemeContext);
 
   const [theme] = data;
@@ -17,4 +17,4 @@ const acercaDe = () => {
   );
 };
 
-export default acercaDe;
+export default AcercaDe;
