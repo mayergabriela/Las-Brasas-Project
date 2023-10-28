@@ -3,11 +3,15 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import CardButton from "./CardButtonComprar";
 import CardButtonAdd from "./CardButtonAdd";
+import BeatLoader from "react-spinners/BeatLoader";
+
+const ONE_SECOND = 1000
+
 
 function Card() {
   const [data, setData] = useState([]); // Estado para almacenar los datos de la API
   const [categoryFilter, setCategoryFilter] = useState("vinos");
-
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     try {
       fetch(`https://fake-api-bay.vercel.app/${categoryFilter}`)
@@ -26,6 +30,15 @@ function Card() {
   const handleCategoryClick = (category) => {
     setCategoryFilter(category);
   };
+
+  useEffect(() =>{
+    setLoading(true)
+    setTimeout(() =>{
+      setLoading(false)
+
+    },ONE_SECOND)
+
+  },[])
 
   return (
     <>
@@ -74,38 +87,51 @@ function Card() {
           </button>
         </article>
       </section>
-      <section className="grid place-content-center">
-        <article className="flex justify-center flex-wrap gap-9 p-1">
-          {data.map((product) => (
-            <div
-              className="flex container flex-col justify-between items-center w-[300px] rounded-lg bg-slate-50 shadow-lg"
-              key={product.id}
-            >
-              <div className="grid place-content-center">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  height={200}
-                  width={200}
-                  layout="responsive"
-                  className="rounded-lg"
-                />
-              </div>
-              <div className="grid place-items-center">
-                <p className="font-bold text-xl mb-2 p-2">{product.name}</p>
-                <p className="p-1 text-black">{product.description}</p>
-              </div>
-                <div className=" relative left-24 rounded-lg bg-slate-200">
-                  <p className="px-6 pt-4 pb-2 text-slate-950">${product.price}</p>
+
+      {loading ? (
+        <BeatLoader
+          color={"#EBAA10"}
+          loading={loading}
+          size={30}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      ) : (
+        <section className="grid place-content-center">
+          <article className="flex justify-center flex-wrap gap-9 p-1">
+            {data.map((product) => (
+              <div
+                className="flex container flex-col justify-between items-center w-[300px] rounded-lg bg-slate-50 shadow-lg"
+                key={product.id}
+              >
+                <div className="grid place-content-center">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    height={200}
+                    width={200}
+                    layout="responsive"
+                    className="rounded-lg"
+                  />
                 </div>
-              <div className="flex">
-                <CardButton />
-                <CardButtonAdd data={product} />
+                <div className="grid place-items-center">
+                  <p className="font-bold text-xl mb-2 p-2">{product.name}</p>
+                  <p className="p-1 text-black">{product.description}</p>
+                </div>
+                <div className=" relative left-24 rounded-lg bg-slate-200">
+                  <p className="px-6 pt-4 pb-2 text-slate-950">
+                    ${product.price}
+                  </p>
+                </div>
+                <div className="flex">
+                  <CardButton />
+                  <CardButtonAdd data={product} />
+                </div>
               </div>
-            </div>
-          ))}
-        </article>
-      </section>
+            ))}
+          </article>
+        </section>
+      )}
     </>
   );
 }
