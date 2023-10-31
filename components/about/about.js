@@ -4,7 +4,7 @@ import imageAbout2 from "/public/images/aboutImage/img 2.png";
 import imageAbout1 from "/public/images/aboutImage/img 1.png";
 import imageAbout3 from "/public/images/aboutImage/img 3.png";
 /*****  COMPONENTS  *****/
-import AboutDueño from "./AboutDueño";
+import AboutDueño from "./aboutDueño";
 
 export default function About() {
   return (

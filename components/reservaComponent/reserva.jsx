@@ -7,7 +7,7 @@ import { FaCalendar, FaUsers } from "react-icons/fa";
 import Datetime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
 
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { useContext } from "react";
 
 const Reserva = () => {
